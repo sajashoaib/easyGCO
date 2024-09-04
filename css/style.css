@@ -316,7 +316,8 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  position: relative;
+  padding: 40px 0;
 }
 
 .carousel-inner {
@@ -339,6 +340,7 @@ body {
   border-radius: 37px;
   transition: transform 0.2s;
   padding: 40px 0;
+  margin-bottom: 15px;
 }
 .carousel-inner .row .card #card-one {
   height: 402px;
@@ -441,7 +443,7 @@ body {
 
 .circle {
   width: 400px;
-  height: 400px;
+  height: 380px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -614,5 +616,6 @@ body {
   .sec5-lg-img1 {
     display: none;
   }
+  
 }
 /* ***************************** end media query style ************************* */
