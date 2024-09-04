@@ -1,0 +1,629 @@
+:root {
+  --primary-color: rgba(221, 18, 45, 1);
+  --icon-color: rgba(230, 0, 30, 1);
+  --dark-color: rgba(0, 0, 0, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ***************************** Start navbar style ************************* */
+.navbar .logo {
+  width: 165.15px;
+  height: 47.34px;
+}
+.navbar .navbar-toggler {
+  color: var(--dark-color);
+  font-size: 20px;
+  background-color: var(--primary-color);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.navbar .navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--dark-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+  text-align: left;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.dropdown-toggle:focus,
+.main-btn:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.main-btn {
+  height: 47px;
+  padding: 12px 40px 12px 40px;
+  border-radius: 52px 0px 0px 0px;
+  opacity: 0px;
+  margin-right: 30px;
+  transition: all 0.3s ease;
+}
+.main-btn.one {
+  width: 141px;
+  border: 1.5px 0px 0px 0px;
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--dark-color);
+}
+.main-btn.one:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+}
+.main-btn.two {
+  width: 182px;
+  background-color: var(--primary-color);
+  color: white;
+}
+.main-btn.two:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* ***************************** End navbar style ************************* */
+/* ***************************** start landingpage style ************************* */
+
+.landing .container .row {
+  gap: 80px;
+  padding: 40px 0 20px 0;
+}
+
+.landing .text h1 {
+  color: var(--primary-color);
+  font-size: 80px;
+  line-height: 114px;
+}
+
+.landing .text h1 span {
+  color: var(--dark-color);
+  display: block;
+}
+.landing .text .desc {
+  color: rgba(71, 71, 71, 1);
+  font-size: 20px;
+  line-height: 32px;
+}
+.landing .text a {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  transition: all 0.3s ease;
+}
+.landing .text a:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(208, 40, 40, 0.15);
+}
+.landing .text a i {
+  color: var(--dark-color);
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.landing .img-content {
+  background-image: url(../images/img-background.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  width: 580px;
+  height: 595px;
+  cursor: pointer;
+}
+.landing .img-content .headphone {
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  background-color: white;
+  width: 180px;
+  height: 226.96px;
+  border-radius: 22.07px;
+  box-shadow: 0px 4.2px 42.87px 0px rgba(0, 0, 0, 0.07);
+}
+
+.landing .img-content .headphone h4 {
+  font-size: 18.91px;
+  font-weight: 500;
+  line-height: 22.16px;
+  color: var(--dark-color);
+}
+.landing .img-content .lap-img .img-fluid {
+  width: 400.03px;
+  height: 324.44px;
+}
+.landing .img-content .ecommerce {
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  left: -20px;
+  border-radius: 57px;
+  width: 230px;
+  height: 64px;
+  padding: 10px;
+  box-shadow: 0px 4px 39.7px 0px rgba(0, 0, 0, 0.07);
+}
+.landing .img-content .ecommerce img {
+  background-color: rgba(224, 238, 225, 1);
+  border-radius: 50%;
+  padding: 10px;
+}
+.landing .img-content .ecommerce h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: var(--dark-color);
+}
+.sec1-sm-img {
+  display: none;
+}
+/* ***************************** end landingpage style ************************* */
+/* ***************************** start Solution section ************************* */
+.solutions .solutions-card h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 70.31px;
+  color: rgba(28, 30, 33, 1);
+}
+.solutions .solutions-card h2 span {
+  font-weight: 600;
+}
+.solutions-card .card-contain .card:first-child {
+  border: none;
+  box-shadow: 0px 27px 54px 0px rgba(0, 0, 0, 0.05);
+}
+.solutions .card {
+  width: 537.64px;
+  height: 127.91px;
+  border-radius: 23px;
+  box-shadow: 0px 27px 54px 0px rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+}
+
+.solutions .card .sec-icon {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  background-color: rgba(255, 238, 237, 1);
+  border-radius: 50%;
+}
+.solutions .card h5 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.16px;
+  color: rgba(0, 0, 0, 1);
+}
+.solutions-card .card p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.24px;
+  color: rgba(86, 86, 86, 1);
+}
+
+.sec2-lg-img {
+  width: 786px;
+  height: 740.71px;
+}
+
+/* ***************************** end Solution section ************************* */
+
+/* ***************************** start chooseEasyGCO section ************************* */
+.chooseEasyGCO {
+  background-color: rgba(250, 249, 246, 1);
+}
+.chooseEasyGCO h3 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 70.31px;
+  text-align: left;
+  color: var(--dark-color);
+}
+.chooseEasyGCO h3 span {
+  font-weight: 600;
+}
+.chooseEasyGCO .chooseEasyGCO-card #one {
+  background-color: white;
+  border-radius: 26px;
+}
+.choose-card {
+  width: 377px;
+  height: 358px;
+}
+.chooseEasyGCO-card .choose-card img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 15px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.chooseEasyGCO .chooseEasyGCO-card #one img {
+  background-color: rgba(250, 249, 246, 1);
+}
+
+.choose-card h5 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.16px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.choose-card p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.24px;
+  text-align: left;
+  color: rgba(108, 108, 108, 1);
+}
+/* ***************************** end chooseEasyGCO section ************************* */
+/* ***************************** start features style ************************* */
+
+.features h3 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 70.31px;
+  text-align: center;
+  color: rgba(9, 11, 18, 1);
+}
+.features h3 span {
+  display: block;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 82.03px;
+  text-align: center;
+}
+.features-contain .nextprev i {
+  color: var(--icon-color);
+  font-size: 20px;
+  border: 1px solid var(--icon-color);
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.features .features-contain .i-two {
+  background-color: var(--icon-color);
+  color: white;
+}
+
+.features .features-contain {
+  background-image: url(../images/background-features.jpg);
+  background-position:center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+
+
+
+}
+
+.carousel-inner {
+  /* width: 1440px; */
+}
+.carousel-inner .carousel-item {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+.carousel-item {
+  display: flex;
+  gap: 1rem;
+} 
+
+.card {
+  flex: 0 0 auto; 
+  width: 100%; 
+  border: none;
+  border-radius: 37px;
+  transition: transform 0.2s;
+  padding: 40px 0;
+}
+.carousel-inner .row .card #card-one{
+height: 402px;
+
+}
+.carousel-inner .row .card .card-body{
+height: 300px;
+
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.carousel {
+  overflow: visible; 
+} 
+.card img{
+  width: 60px;
+height: 60px;
+background-color: rgba(250, 249, 246, 1);
+border-radius: 50%;
+padding: 10px;
+
+
+}
+.card .card-title{
+font-size: 25px;
+font-weight: 500;
+line-height: 35.16px;
+margin: 5px 0;
+
+}
+.card-text{
+  font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: rgba(106, 106, 106, 1);
+
+}
+.carousel-indicators{
+  margin: -30px 0;
+}
+.carousel-indicators [data-bs-target] {
+   border-radius: 50%;  /* Make them round */
+  width: 5px;
+  height: 5px;
+  padding: 5px;
+  background-color: rgba(123, 123, 123, 1);
+  
+  
+}
+
+.carousel-indicators .active {
+  background-color: rgba(230, 0, 30, 1);
+ 
+}
+
+
+
+
+
+
+
+/* ***************************** end features style ************************* */
+
+/* ***************************** start getStarted style ************************* */
+
+.getStarted .getstarted-contain {
+  margin: 20px 0;
+  border-radius: 30px;
+  box-shadow: 20px -2px 100px 0px rgba(255, 105, 180, 0.5);
+  padding: 0 20px;
+}
+
+.getStarted .getstarted-contain h3 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 70.31px;
+  text-align: left;
+  color: rgba(9, 11, 18, 1);
+}
+.getStarted .getstarted-contain p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.24px;
+  text-align: left;
+  color: rgba(72, 72, 72, 1);
+}
+
+.btn-start {
+  border: 2px solid var(--icon-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: center;
+
+  padding: 20px 40px 20px 40px;
+  border-radius: 52px;
+}
+.btn-start i {
+  color: var(--icon-color);
+  text-align: center;
+}
+
+.get-image {
+  width: 576.29px;
+  height: 391.08px;
+}
+.circle {
+  width: 500px;             
+  height: 500px;            
+  background-color: #3498db;   
+  border-radius: 50%;        
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* ***************************** start join style ************************* */
+.join {
+  margin: 70px 0;
+  background-color: rgba(250, 249, 246, 1);
+  overflow: hidden;
+}
+.join .text h3 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 70.31px;
+  text-align: center;
+  color: var(--dark-color);
+}
+.join .text h3 span {
+  display: block;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 82.03px;
+  text-align: center;
+  color: var(--primary-color);
+}
+.join .text p {
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40.85px;
+  text-align: center;
+  color: rgba(62, 62, 62, 1);
+}
+.contact {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.per1 {
+  position: absolute;
+  left: 200px;
+}
+.per3 {
+  position: absolute;
+  left: 300px;
+}
+.per4 {
+  position: absolute;
+  left: 500px;
+  bottom: 0;
+}
+.po-circle {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+}
+.pologon5 {
+  position: absolute;
+  left: 570px;
+  top: -10px;
+}
+/* ***************************** end join style ************************* */
+
+/* ***************************** start links style ************************* */
+
+.links {
+  text-align: left;
+  cursor: pointer;
+}
+.links .info p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  color: rgba(75, 75, 75, 1);
+}
+.links h5 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.16px;
+}
+
+.links ul li {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27.24px;
+  color: rgba(0, 0, 0, 1);
+  margin: 5px 0;
+}
+/* ***************************** end links style ************************* */
+
+/* ***************************** start footer style ************************* */
+
+.footer {
+  background-color: rgba(250, 249, 246, 1);
+  padding: 40px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: left;
+  cursor: pointer;
+}
+.footer .socail img {
+  border: 2px solid var(--dark-color);
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+/* ***************************** end footer style ************************* */
+
+/* ***************************** start media query style ************************* */
+
+@media (max-width: 991px) {
+  .solutions-card {
+    order: 1;
+  }
+  .sec1-sm-img {
+    display: block;
+  }
+  .landing .img-content .lap-img .img-fluid {
+    width: 350px;
+    height: 369.46px;
+  }
+  .sec2-lg-img {
+    display: none;
+  }
+  .learn-more-btn {
+    display: block;
+    margin-top: 20px;
+    order: 3;
+  }
+  .getStarted .getstarted-contain {
+    margin: 20px 0;
+    border-radius: 30px;
+    box-shadow: none;
+
+    padding: 33px 20px 33px 20px;
+  }
+  .getStarted .getstarted-contain .text {
+    margin: 90px 0;
+  }
+  .per4 {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+  }
+  .po-circle {
+    position: absolute;
+    bottom: 100px;
+    left: 680px;
+    width: 36px;
+    height: 36px;
+  }
+  .join .text h3,
+  .join .text h3 span {
+    font-size: 36px;
+  }
+
+  .join .text p {
+    font-size: 20px;
+  }
+  .sec5-lg-img1{
+    display: none;
+  }
+}
+/* ***************************** end media query style ************************* */
