@@ -1,0 +1,281 @@
+:root {
+  --primary-color: rgba(221, 18, 45, 1);
+  --icon-color: rgba(230, 0, 30, 1);
+  --dark-color: rgba(0, 0, 0, 1);
+  --background-color: rgba(250, 249, 246, 1);
+}
+.color-icon{
+  color: var(--icon-color);
+}
+.color-red {
+  color: var(--primary-color);
+}
+.color-subhead1 {
+  color: rgba(9, 11, 18, 1);
+}
+.color-subhead2 {
+  color: rgba(28, 30, 33, 1);
+}
+.color-paragraph1 {
+  color: rgba(71, 71, 71, 1);
+}
+.color-btn-text{
+    color: rgba(41, 41, 41, 1);
+}
+.dark-color{
+    color: var(--dark-color);
+}
+.color-paragraph2 {
+color :rgba(78, 78, 78, 1);
+}
+.color-paragraph3 {
+    color: rgba(113, 113, 113, 1);
+}
+.color-paragraph4 {
+    color: rgba(108, 108, 108, 1);
+}
+.color-paragraph5 {
+  color :rgba(79, 79, 79, 1);
+  }
+.bg-color{
+    background-color: var(--background-color);
+}
+.bg-dark-color{
+    background-color: var(--dark-color);
+}
+.bg-order-color{
+    background-color: rgba(184, 217, 186, 1);
+    ;
+}
+
+
+
+
+.fw-200 {
+    font-weight: 200;
+}
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fs-12 {
+    font-size: 12px;
+  }
+.fs-14 {
+    font-size: 14px;
+  }
+.fs-16 {
+    font-size: 16px;
+  }
+  .fs-18 {
+    font-size: 18px;
+  }
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+    font-size: 22px;
+  }
+.fs-24 {
+  font-size: 24px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+.fs-40 {
+    font-size: 30px;
+  }
+.fs-50 {
+  font-size: 50px;
+}
+.fs-60 {
+  font-size: 60px;
+}
+.fs-80 {
+  font-size: 80px;
+}
+.fs-100 {
+  font-size: 100px;
+}
+.fs-170 {
+    font-size: 170px;
+  }
+  .lh-14 {
+    line-height: 14px;
+  }
+  .lh-22 {
+    line-height: 22px;
+  }
+  .lh-32 {
+    line-height: 32px;
+  }
+.lh-34 {
+  line-height: 34px;
+}
+.lh-35 {
+  line-height: 35px;
+}
+.lh-27 {
+  line-height: 24px;
+}
+.lh-40 {
+  line-height: 40px;
+}
+.lh-46 {
+    line-height: 46px;
+  }
+  .lh-70 {
+    line-height: 70px;
+  }
+.lh-72 {
+  line-height: 72px;
+}
+.lh-93 {
+  line-height: 93px;
+}
+.lh-114 {
+    line-height: 114px;
+  }
+.lh-117 {
+  line-height: 117px;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+  }
+  .mb-0 {
+    margin-bottom: 0px;
+  }
+  .ml-10 {
+    margin-left: 10px;
+  }
+.ml-20 {
+  margin-left: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pt-80 {
+    padding-top: 80px;
+  }
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pt-10 {
+    padding-top: 10px;
+  }
+.pb-40 {
+  padding-bottom: 40px;
+}
+.pb-60 {
+    padding-bottom: 60px;
+  }
+  .pb-10 {
+    padding-bottom: 10px;
+  }
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+.pr-50 {
+    padding-right: 50px;
+  }
+
+.create-store-btn {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+  border-radius: 52px;
+  transition: all 0.3s ease;
+
+}
+.order-store-btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 50px ;
+    border-radius: 5px;
+line-height: 18.75px;
+text-align: left;
+transition: all 0.3s ease;
+
+
+  }
+
+.shadow {
+  box-shadow: 0px 2.83px 27.88px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+  .fs-sm-60 {
+    font-size: 60px;
+  }
+  .fs-sm-40 {
+    font-size: 40px;
+  }
+  .fs-sm-80 {
+    font-size: 80px;
+  }
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+  .pt-lg-40{
+    padding-top: 40px;
+  }
+  .lh-sm-80 {
+    line-height: 80px;
+}
+}
