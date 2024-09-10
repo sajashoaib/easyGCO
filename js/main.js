@@ -8,21 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const nextBtn = document.getElementById("nextBtn");
   const prevBtn = document.querySelector(".prev-btn");
-  const indicators = document.querySelectorAll(
-    ".carousel-indicators .indicator"
-  );
+  const indicators = document.querySelectorAll(".carousel-indicators button");
 
-  // Function to update indicator colors based on the active index
+  let activeIndex = 0; // Counter to track the active index
+
   function updateIndicators() {
-    const activeIndex = Array.from(carousel.children).indexOf(
-      carousel.querySelector(".carousel-item.active")
-    );
     console.log("Active Index:", activeIndex);
     indicators.forEach((indicator, index) => {
-      // Add or remove active class based on the active index
       if (index === activeIndex) {
         indicator.classList.add("active-indicator");
-        console.log("active");
+        console.log(indicator);
       } else {
         indicator.classList.remove("active-indicator");
       }
@@ -35,8 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstItem = carousel.querySelector(".carousel-item:first-child");
 
     let nextItem = activeItem.nextElementSibling;
+
     if (!nextItem) {
-      nextItem = firstItem;
+      nextItem = firstItem; // Loop back to the first item
     }
 
     activeItem.classList.remove("active");
@@ -44,7 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     carousel.appendChild(firstItem);
 
-    // Update indicators after moving items
+    // Update the active index counter
+    activeIndex = (activeIndex + 1) % indicators.length;
+
     updateIndicators();
   });
 
@@ -54,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastItem = carousel.querySelector(".carousel-item:last-child");
 
     let prevItem = activeItem.previousElementSibling;
+
     if (!prevItem) {
       prevItem = lastItem;
     }
@@ -63,25 +62,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     carousel.insertBefore(lastItem, carousel.firstChild);
 
+    // Update the active index counter
+    activeIndex = (activeIndex - 1 + indicators.length) % indicators.length;
+
     updateIndicators();
   });
 
-  // Initialize indicators on page load
   updateIndicators();
 });
 
 // ************************************************************************
 document.querySelectorAll(".accordion-header img").forEach((img) => {
   img.addEventListener("click", function () {
-    const button = this.nextElementSibling; 
+    const button = this.nextElementSibling;
 
     button.click();
 
     // Toggle the image src based on the button's collapsed state
     if (button.classList.contains("collapsed")) {
-      this.src = "../images/discover-img/plus.svg"; 
+      this.src = "../images/discover-img/plus.svg";
     } else {
-      this.src = "../images/discover-img/mnuis.svg"; 
+      this.src = "../images/discover-img/mnuis.svg";
     }
   });
 });

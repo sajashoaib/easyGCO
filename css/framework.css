@@ -10,6 +10,9 @@
 .color-red {
   color: var(--primary-color);
 }
+.color-white{
+  color: white;
+}
 .color-subhead1 {
   color: rgba(9, 11, 18, 1);
 }
@@ -46,6 +49,9 @@ color :rgba(78, 78, 78, 1);
 .bg-order-color{
     background-color: rgba(184, 217, 186, 1);
     ;
+}
+.bg-red-color{
+  background-color: var(--icon-color);
 }
 
 
@@ -106,6 +112,9 @@ color :rgba(78, 78, 78, 1);
 }
 .fs-60 {
   font-size: 60px;
+}
+.fs-70 {
+  font-size: 70px;
 }
 .fs-80 {
   font-size: 80px;
@@ -174,10 +183,14 @@ color :rgba(78, 78, 78, 1);
 .mt-50 {
   margin-top: 50px;
 }
+.mt-60 {
+  margin-top: 60px;
+}
 
 .mb-30 {
   margin-bottom: 30px;
 }
+
 .mb-10 {
     margin-bottom: 10px;
   }
@@ -190,7 +203,9 @@ color :rgba(78, 78, 78, 1);
 .ml-20 {
   margin-left: 20px;
 }
-
+.mr-10 {
+  margin-left: 10px;
+}
 .pt-20 {
   padding-top: 20px;
 }
@@ -230,6 +245,9 @@ color :rgba(78, 78, 78, 1);
   padding-left: 20px;
 }
 .pr-50 {
+    padding-right: 50px;
+  }
+  .pr-10 {
     padding-right: 50px;
   }
 
@@ -278,4 +296,12 @@ transition: all 0.3s ease;
   .lh-sm-80 {
     line-height: 80px;
 }
+.fs-sm-14 {
+  font-size: 14px;
+}
+.row-sm-column{
+  display: flex;
+  flex-direction: column;
+}
+
 }

@@ -106,21 +106,19 @@ html {
   padding: 10px;
 }
 
-.landing .img-content {
-  background-image: url(../images/img-background.png);
-  background-position: center;
-  background-size: cover;
-  border-radius: 30px;
-  width: 480px;
-  height: 500px;
-  cursor: pointer;
+.bg-landing-index {
+  width: 540px;
+  height: 550px;
+  position: absolute;
+  left: 150px;
 }
+
 .landing .img-content .headphone {
   position: absolute;
   top: 30px;
-  left: -70px;
+  left: 70px;
   background-color: white;
-  width: 150px;
+  width: 180px;
   height: 220px;
   border-radius: 22.07px;
 }
@@ -129,15 +127,18 @@ html {
   padding: 5px 10px;
 }
 
-.landing .img-content .lap-img .img-fluid {
-  width: 380px;
-  height: 324px;
-}
-.landing .img-content .ecommerce {
+.lap-img {
   position: absolute;
-  bottom: 0px;
+  width: 460px;
+  height: 400px;
+  top: 100px;
+  left: 200px;
+}
+.ecommerce {
+  position: absolute;
+  bottom: -60px;
   background-color: white;
-  left: -20px;
+  left: 140px;
   border-radius: 57px;
   width: 230px;
   height: 64px;
@@ -149,12 +150,10 @@ html {
   padding: 10px;
 }
 
-.sec1-sm-img {
-  display: none;
-}
 .Polygon-1 {
   position: absolute;
   top: 20px;
+  right: -50px;
 }
 .star-sec1-img {
   position: absolute;
@@ -162,49 +161,36 @@ html {
 }
 
 @media (max-width: 991px) {
-  .landing .img-content {
-    width: 350px;
-    height: 369.46px;
-    padding: 60px;
+  .wrapper-landing {
+    margin-bottom: 500px;
   }
-  .landing .img-content .lap-img {
-    width: 297.41px;
-    height: 225px;
-  }
-  .landing .img-content .headphone {
-    width: 122px;
-    height: 144.79px;
+  .bg-landing-index {
     position: absolute;
-    left: 200px;
-    top: -50px;
+    width: 100%;
+    left: 0;
   }
-  .landing .img-content .headphone .head-img {
-    width: 81.11px;
-    height: 74.41px;
-  }
-  .landing .img-content .headphone h4 {
-    font-size: 12.07px;
-    font-weight: 500;
-    line-height: 14.14px;
-  }
-  .landing .img-content .ecommerce {
+
+  .lap-img {
     position: absolute;
-    top: 10px;
-    width: 172px;
-    height: 43px;
+    width: 440px;
+    left: 40px;
+    top: 120px;
   }
-  .landing .img-content .ecommerce h5 {
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 14.69px;
-    text-align: left;
-  }
+
   .Polygon-1 {
     display: none;
   }
-  .landing .img-content .lap-img .img-fluid {
-    width: 350px;
-    height: 369.46px;
+  .landing .img-content .headphone {
+    height: 180px;
+    position: absolute;
+    left: 250px;
+    top: -50px;
+  }
+
+  .ecommerce {
+    position: absolute;
+    top: 10px;
+    left: 0;
   }
 }
 
@@ -401,13 +387,9 @@ html {
 
 .carousel-inner .carousel-item {
   display: flex;
-  gap: 10px;
-}
-
-.carousel-item {
-  display: flex;
   gap: 1rem;
 }
+
 
 .card {
   flex: 0 0 auto;
@@ -416,11 +398,8 @@ html {
   border-radius: 37px;
   transition: transform 0.2s;
   padding: 40px 0;
-  /* margin-bottom: 15px; */
 }
-.carousel-inner .row .card #card-one {
-  height: 402px;
-}
+
 .carousel-inner .row .card .card-body {
   height: 300px;
 }
@@ -463,9 +442,7 @@ html {
   background-color: rgba(123, 123, 123, 1);
 }
 
-/* .carousel-indicators .active {
-  background-color: rgba(230, 0, 30, 1);
-} */
+
 
 @media (max-width: 991px) {
   .nextprev {
@@ -498,11 +475,7 @@ html {
   }
 }
 
-@media (min-width: 992px) {
-  .row-features > div {
-    display: block;
-  }
-}
+
 @media (min-width: 768px) {
   .carousel-inner {
     display: flex;
@@ -532,6 +505,7 @@ html {
 }
 
 .active-indicator {
+  background-color:rgba(230, 0, 30, 1);;
   color: #0077b5;
 }
 
@@ -1620,6 +1594,7 @@ html {
 @media (max-width: 991px) {
   .row {
     gap: 80px;
+    flex-direction: column;
   }
   .border-subscription {
     width: 480px;
@@ -1873,3 +1848,415 @@ html {
 }
 /* ****************************** end order traking style************************* */
 /* *************************************************** end shipping page style************* ************************* */
+
+/* *************************************************** start Payment-Gatways page style************* ************************* */
+/* ******************************start landing payment-gatways styles ***********************/
+.payment-images {
+  width: 250px;
+  height: 350px;
+  left: 100px;
+}
+.select-gatway {
+  left: 50px;
+  top: -20px;
+}
+.map-payments {
+  width: 640px;
+  height: 406px;
+}
+/* ******************************end landing payment-gatways styles ***********************/
+
+/* ******************************start transaction styles ***********************/
+
+.man-hand {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.lock {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  width: 145px;
+  height: 145px;
+}
+.transaction-sm-star {
+  position: absolute;
+  bottom: 30px;
+  left: 320px;
+}
+.transaction-lg-star {
+  position: absolute;
+  bottom: 30px;
+  left: 340px;
+}
+.green-circle-transaction {
+  position: absolute;
+  left: 190px;
+}
+.above-arrow-transaction {
+  position: absolute;
+  left: 205px;
+  top: 20px;
+}
+.bottom-arrow-transaction {
+  position: absolute;
+  left: 205px;
+  top: 50px;
+}
+.black-bg1-transaction {
+  position: absolute;
+  top: 150px;
+  left: 163px;
+}
+.black-bg2-transaction {
+  background-image: url(../images/payments-gatways/black-bg2-transaction.svg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 139.9px;
+  height: 97.9px;
+  top: 170px;
+  left: 163px;
+}
+.mm-yy {
+  font-family: Open Sans;
+  font-size: 8px;
+  line-height: 10.89px;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.pngwin {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 991px) {
+  .green-circle-transaction {
+    position: absolute;
+    top: 0px;
+  }
+  .lock {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 130px;
+    height: 130px;
+  }
+  .man-hand {
+    position: absolute;
+    left: 10px;
+  }
+  .black-bg1-transaction {
+    position: absolute;
+    left: 173px;
+  }
+  .black-bg2-transaction {
+    position: absolute;
+    top: 170px;
+    left: 173px;
+  }
+  .map-payments {
+    width: 100%;
+    height: 406px;
+  }
+  .bg-transaction {
+    width: 100%;
+  }
+}
+/* ******************************end transaction styles ***********************/
+
+/* ******************************start curriences styles ***********************/
+
+.bg-curriences {
+  padding: 20px;
+}
+.line-true-curriences {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+.monyes {
+  position: absolute;
+  border-radius: 20px;
+  padding: 10px;
+  width: 350px;
+  top: 100px;
+  background-color: white;
+  left: 100px;
+}
+.each-money {
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+.jpy {
+  margin-left: -30px;
+}
+/* ******************************end curriences styles ***********************/
+
+/* ******************************start Cryptocurrency styles ***********************/
+
+.bg-Cryptocurrency {
+  width: 643px;
+  height: 431px;
+}
+.financial-payment-Cryptocurrency {
+  position: absolute;
+  top: 14px;
+}
+.arrow-Cryptocurrency {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.true-Cryptocurrency {
+  position: absolute;
+  top: 100px;
+  left: 180px;
+}
+.payment-text {
+  position: absolute;
+  top: 160px;
+  left: 180px;
+}
+.Cryptocurrency-payment-types {
+  position: absolute;
+  top: 220px;
+  left: 160px;
+  border-top: 1px solid rgba(228, 228, 228, 1);
+}
+.Crypto-icon {
+  width: 18px;
+  height: 18px;
+}
+/* ******************************end Cryptocurrency styles ***********************/
+
+/* ******************************start Fees styles ***********************/
+.fees-chart {
+  position: absolute;
+  width: 299px;
+  height: 219px;
+  border-radius: 20px;
+  background-color: white;
+  top: 100px;
+  right: 20px;
+  padding: 20px;
+}
+
+.fees-chart-img {
+  width: 229px;
+  height: 140px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.ten-thousand {
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 10px;
+  left: 140px;
+  top: 70px;
+}
+/* ******************************end Fees styles ***********************/
+
+/* ******************************start Integration styles ***********************/
+.realistic-laptop-integration {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.code-icon-integration {
+  position: absolute;
+  padding: 20px;
+  border-radius: 10px;
+  top: 150px;
+  right: 70px;
+  background-color: white;
+}
+.girle-icon-integration {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  padding: 15px;
+  top: 150px;
+  left: -40px;
+}
+/* ******************************end Integration styles ***********************/
+
+/* ******************************start Fees,Cryptocurrency,Integration media query styles ***********************/
+@media (max-width: 991px) {
+  .bg-Cryptocurrency {
+    width: 100%;
+  }
+  .financial-payment-Cryptocurrency {
+    position: absolute;
+    top: 29px;
+    width: 390px;
+    height: 417px;
+    left: 70px;
+  }
+
+  .arrow-Cryptocurrency {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+  }
+  .true-Cryptocurrency {
+    position: absolute;
+    top: 150px;
+    left: 180px;
+    width: 30px;
+    height: 30px;
+  }
+  .payment-text {
+    position: absolute;
+    top: 180px;
+    left: 170px;
+  }
+  .Cryptocurrency-payment-types {
+    position: absolute;
+    left: 162px;
+  }
+  .Crypto-icon {
+    width: 12px;
+    height: 12px;
+  }
+  .realistic-laptop-integration {
+    width: 443px;
+  }
+  .code-icon-integration {
+    position: absolute;
+    padding: 10px;
+    top: 170px;
+    right: 20px;
+  }
+  .girle-icon-integration {
+    position: absolute;
+    padding: 15px;
+    top: 0px;
+    left: 30px;
+  }
+}
+/* ******************************end Fees,Cryptocurrency,Integration media query styles ***********************/
+/* *************************************************** end Payment-Gatways page style************* ************************* */
+.digital-bg {
+  width: 640px;
+}
+.store-digital-products {
+  padding: 15px 25px;
+}
+.digital-man-smiling {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  width: 525px;
+  height: 437px;
+}
+.black-digital-shadow {
+  position: absolute;
+  bottom: 0;
+  width: 640px;
+}
+.circle-digital-product {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  width: 180px;
+}
+.digital-frame {
+  position: absolute;
+  top: 150px;
+  right: 30px;
+}
+.xxx-sm-red-circle {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+.xxx-sm-white-line {
+  width: 30px;
+}
+.white-product-lines {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+.text-sell,
+.text-digital-products {
+  font-family: "Homenaje", sans-serif;
+}
+.text-digital-products {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+.text-digital-images {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+@media (max-width: 991px) {
+  .digital-bg {
+    width: 100%;
+  }
+  .digital-man-smiling {
+    position: absolute;
+    width: 480px;
+    height: 350px;
+  }
+  .circle-digital-product {
+    width: 150px;
+  }
+  .digital-frame {
+    position: absolute;
+    top: 80px;
+  }
+  .black-digital-shadow {
+    position: absolute;
+    width: 96%;
+    left: 10px;
+  }
+}
+/* ** */
+.cardboard-boxes-physical-products {
+  width: 700px;
+}
+.brunette-girl-physical {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  height: 420px;
+}
+.black-physical-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  width: 96.5%;
+}
+.text-physical-images,
+.text-physical-products {
+  font-family: "Homenaje", sans-serif;
+}
+.text-physical-images {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+.text-physical-products {
+  position: absolute;
+  bottom: 5px;
+  left: 50px;
+}
+@media (max-width: 991px) {
+  .brunette-girl-physical {
+    height: 300px;
+  }
+  .black-physical-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    width: 95%;
+  }
+}
