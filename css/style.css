@@ -3265,3 +3265,317 @@ html {
 
 /* ******************************end seamless mangment , subscription plan media query styles ***********************/
 /* *************************************************** end subscription mangment page style************* ************************* */
+.product-sourcing {
+  min-height: calc(100vh - 76px);
+}
+.cardboard-droppshoping {
+  position: absolute;
+  top: 100px;
+  width: 340px;
+  height: 299px;
+  left: 220px;
+}
+.location1 {
+  position: absolute;
+  top: 80px;
+  left: 370px;
+}
+.location2 {
+  position: absolute;
+  top: 40px;
+  right: 130px;
+}
+.location3 {
+  position: absolute;
+  top: 180px;
+  right: 90px;
+}
+.clothes {
+  position: absolute;
+  background-color: white;
+  width: 232px;
+  height: 370px;
+  top: 20px;
+  border-radius: 20px;
+  left: 80px;
+  padding: 10px;
+}
+.t-shirt {
+  background-color: rgba(203, 224, 204, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+.sm-droppshoping-heart {
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+  left: 80px;
+}
+.cart-droppshoping-btn {
+  background-color: rgba(149, 181, 151, 1);
+  border-radius: 10px;
+  padding: 5px;
+}
+.trousar {
+  padding: 20px 25px;
+}
+.droppshoping-search {
+  border: 1px solid rgba(203, 224, 204, 1);
+  background-color: white;
+  padding: 10px 200px 10px 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Map-product-sorcing {
+    width: 100%;
+  }
+
+  .location2 {
+    right: 60px;
+  }
+  .location3 {
+    top: 130px;
+    right: 150px;
+  }
+  .cardboard-droppshoping {
+    width: 300px;
+  }
+  .clothes {
+    top: -20px;
+  }
+  .droppshoping-search {
+    top: -40px;
+  }
+}
+/* ********* */
+.bg-borde-catalog {
+  width: 600px;
+  height: 327.03px;
+}
+.yellow-stars {
+  position: absolute;
+  top: 0;
+  left: 250px;
+}
+.cart-catalog {
+  position: absolute;
+  top: -10px;
+  right: 60px;
+}
+.green-dropshopping-circles {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.persons-prev-next-div {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+}
+
+.person-catalog2,
+.person-catalog1,
+.plus-catalog {
+  margin-left: -20px;
+}
+.prev-next-catalog {
+  border: 1px solid black;
+  padding: 15px 10px;
+  border-radius: 50%;
+}
+.products-catalog {
+  position: absolute;
+  top: 160px;
+}
+@media (max-width: 768px) {
+  .bg-borde-catalog {
+    width: 100%;
+  }
+  .yellow-stars {
+    top: 30px;
+    left: 200px;
+  }
+  .cart-catalog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .green-dropshopping-circles {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+  }
+  .products-catalog img {
+    width: 150px;
+    height: 150px;
+  }
+  .products-catalog {
+    top: 200px;
+  }
+  .persons-catalog img {
+    width: 40px;
+    height: 53px;
+  }
+  .persons-prev-next-div {
+    top: 120px;
+    left: 30px;
+  }
+}
+/* ******** */
+.closed-cardboard-sm-inventory {
+  position: absolute;
+  top: 170px;
+  left: 60px;
+  z-index: 1;
+}
+.closed-cardboard-lg-inventory {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+.arrow-inventory {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+}
+.tablet-inventory {
+  position: absolute;
+  top: 40px;
+  right: 160px;
+  z-index: 1;
+}
+.lg-inventory-circle {
+  position: absolute;
+  top: 10px;
+  right: 190px;
+}
+.xm-inventory-circle {
+  position: absolute;
+  top: 40px;
+  right: 220px;
+}
+.xm-inventory-star {
+  position: absolute;
+  left: 70px;
+  top: 100px;
+}
+.lg-inventory-star {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+.product-list {
+  position: absolute;
+  top: 80px;
+  right: 200px;
+  z-index: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .tablet-inventory {
+    right: 20px;
+  }
+  .product-list {
+    right: 60px;
+  }
+  .lg-inventory-circle {
+    right: 30px;
+  }
+  .xm-inventory-circle {
+    right: 50px;
+  }
+}
+/* ****** */
+.boxes-customizable{
+  position: absolute;
+  bottom: 100px;
+  left: 80px;
+}
+.shoes-card{
+  position: absolute;
+  background-color: white;
+  width: 297px;
+height: 330px;
+padding: 10px;
+bottom: 50px;
+left: 170px;
+border-radius: 20px;
+}
+
+.like-customizable{
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.border-customizable{
+  
+width: 247px;
+height: 64px;
+}
+.Running-Sho{
+  position: absolute;
+  bottom: 70px;
+}
+.buy-customizable-btn{
+  padding: 8px;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .bg-customizable{
+    width: 100%;
+  }
+  .boxes-customizable{
+ 
+    left: 50px;
+  }
+  .shoes-card{
+  bottom: 20px;
+  left: 120px;
+  }
+}
+/* ******* */
+.order-sm-logo{
+  background-color: rgba(184, 217, 186, 0.2);
+  padding:15px 12px;
+  border-radius:   10px;
+}
+
+.order-text{
+ /* width: 377px; */
+height: 76px; 
+border-radius: 15px;
+position: absolute;
+top: 50px;
+left: 70px;
+background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
