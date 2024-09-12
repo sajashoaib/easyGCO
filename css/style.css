@@ -3331,6 +3331,13 @@ html {
   left: 30px;
   cursor: pointer;
 }
+.droppshoping-green-line{
+  width: 63.93px;
+height: 4px;
+background-color: rgba(203, 224, 204, 0.74);
+border-radius: 10px;
+
+}
 
 @media (max-width: 768px) {
   .Map-product-sorcing {
@@ -3550,18 +3557,50 @@ height: 64px;
   background-color: rgba(184, 217, 186, 0.2);
   padding:15px 12px;
   border-radius:   10px;
+  width: 80px;
+  height: 50px;
+
+
 }
 
 .order-text{
- /* width: 377px; */
+ width: 377px;
 height: 76px; 
 border-radius: 15px;
 position: absolute;
 top: 50px;
 left: 70px;
 background-color: white;
+padding: 10px;
 }
+.order-close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.order-mail{
+  position: absolute;
+  top: 150px;
+  left: 250px;
+}
+.order-car{
+  position: absolute;
+  top: 240px;
+  left: 30px;
+}
+@media (max-width: 768px) {
+  .order-bg{
+    width: 100%;
+  }
+  .order-car{
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    width: 420px;
 
+
+  }
+}
 
 
 
