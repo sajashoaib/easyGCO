@@ -84,6 +84,20 @@ html {
   color: var(--primary-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px), (min-width: 768px) and (max-width: 992px) {
+  .nav-sign-get {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navbar {
+    padding-bottom: 80px;
+  }
+  .navbar .navbar-nav .nav-link {
+    margin-bottom: 10px;
+  }
+}
+
 /* ***************************** End navbar style ************************* */
 /* ***************************** start landingpage style ************************* */
 
@@ -160,7 +174,7 @@ html {
   right: -30px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .wrapper-landing {
     margin-bottom: 500px;
   }
@@ -191,6 +205,51 @@ html {
     position: absolute;
     top: 10px;
     left: 0;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .bg-landing-index {
+    width: 100%;
+    left: 20px;
+  }
+  .lap-img {
+    position: absolute;
+    width: 400px;
+    left: 80px;
+    top: 120px;
+  }
+
+  .Polygon-1 {
+    right: -10px;
+  }
+  .landing .img-content .headphone {
+    left: -10px;
+    top: -30px;
+  }
+  .landing .ecommerce {
+    bottom: -40px;
+    left: 0;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .bg-landing-index {
+    width: 100%;
+    left: 20px;
+  }
+  .lap-img {
+    width: 450px;
+    left: 130px;
+  }
+
+  .Polygon-1 {
+    right: -10px;
+  }
+  .landing .img-content .headphone {
+    left: -10px;
+    top: -30px;
+  }
+  .landing .ecommerce {
+    left: -10px;
   }
 }
 
@@ -274,9 +333,12 @@ html {
   bottom: 130px;
   left: -60px;
 }
+.row-solution {
+  justify-content: space-between;
+}
 
-@media (max-width: 991px) {
-  .solutions {
+@media (max-width: 768px) {
+  .wrapper-solution {
     margin-bottom: 40px;
   }
   .payments {
@@ -315,6 +377,34 @@ html {
     order: 1;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .wrapper-solution {
+    margin-top: 550px;
+  }
+  .ecommerce {
+    bottom: -550px;
+    left: 50px;
+  }
+  .payments {
+    bottom: 120px;
+    left: 40px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .row-solution {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .solutions .card {
+    width: 450px;
+  }
+  .payments {
+    bottom: 120px;
+    left: 40px;
+  }
+}
 
 /* ***************************** end Solution section ************************* */
 
@@ -347,23 +437,13 @@ html {
 .choose-card p {
   font-family: Open Sans;
 }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .choose-md-card {
+    flex: 0 0 32%;
+  }
+}
 /* ***************************** end chooseEasyGCO section ************************* */
 /* ***************************** start features style ************************* */
-
-.features h3 {
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 70.31px;
-  text-align: center;
-  color: rgba(9, 11, 18, 1);
-}
-.features h3 span {
-  display: block;
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 82.03px;
-  text-align: center;
-}
 .features-contain .nextprev i {
   color: var(--icon-color);
   font-size: 20px;
@@ -389,7 +469,6 @@ html {
   display: flex;
   gap: 1rem;
 }
-
 
 .card {
   flex: 0 0 auto;
@@ -442,9 +521,7 @@ html {
   background-color: rgba(123, 123, 123, 1);
 }
 
-
-
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .nextprev {
     position: absolute;
     bottom: -50px;
@@ -475,7 +552,6 @@ html {
   }
 }
 
-
 @media (min-width: 768px) {
   .carousel-inner {
     display: flex;
@@ -505,8 +581,30 @@ html {
 }
 
 .active-indicator {
-  background-color:rgba(230, 0, 30, 1);;
+  background-color: rgba(230, 0, 30, 1);
   color: #0077b5;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .carousel-item {
+    margin-right: 20px;
+    flex: 0 0 49%;
+    display: block;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .carousel-item {
+    margin-right: 20px;
+    flex: 0 0 32%;
+    display: block;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .carousel-item {
+    flex: 0 0 40%;
+  }
 }
 
 /* ***************************** end features style ************************* */
@@ -522,13 +620,10 @@ html {
   box-shadow: 0px 22px 69.9px 0px rgba(0, 0, 0, 0.05);
   padding: 40px 20px;
   background-color: white;
+  justify-content: space-between;
 }
 
 .getStarted .getstarted-contain h3 {
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 70.31px;
-  text-align: left;
   color: rgba(9, 11, 18, 1);
 }
 .getStarted .getstarted-contain p {
@@ -633,7 +728,7 @@ html {
   opacity: 0.5;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .get-image {
     margin-bottom: 90px;
   }
@@ -686,8 +781,35 @@ html {
   .getStarted .getstarted-contain .text {
     margin: 90px 0;
   }
+  .getStarted .getstarted-contain {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-
+@media (min-width: 768px) and (max-width: 992px) {
+  .circle {
+    display: none;
+  }
+  .getStarted .ecommerce {
+    left: -80px;
+  }
+  .getStarted .getstarted-contain {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .circle {
+    display: none;
+  }
+  .getStarted .ecommerce {
+    left: -80px;
+  }
+  .getStarted .getstarted-contain {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 /* ***************************** end getStarted style ************************* */
 
 /* ***************************** start join style ************************* */
@@ -696,32 +818,12 @@ html {
   background-color: rgba(250, 249, 246, 1);
   overflow: hidden;
 }
-.join .text h3 {
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 70.31px;
-  text-align: center;
-  color: var(--dark-color);
-}
-.join .text h3 span {
-  display: block;
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 82.03px;
-  text-align: center;
-  color: var(--primary-color);
-}
+
 .join .text p {
   font-family: Open Sans;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 40.85px;
-  text-align: center;
-  color: rgba(62, 62, 62, 1);
 }
 .contact {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 10px 20px;
 }
 .per1 {
   position: absolute;
@@ -763,7 +865,7 @@ html {
   right: 170px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .join {
     margin-bottom: 50px;
   }
@@ -816,9 +918,22 @@ html {
   .join .text p {
     font-size: 20px;
   }
-  .join .text h3,
-  .join .text h3 span {
-    font-size: 36px;
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .lg-star {
+    position: absolute;
+    top: 0px;
+  }
+  .per2 {
+    position: absolute;
+    right: 70px;
+    top: 100px;
+  }
+  .sm-star {
+    position: absolute;
+    top: 20px;
+    left: 1px;
   }
 }
 
@@ -871,6 +986,7 @@ html {
   width: 50px;
   height: 50px;
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 .footer .socail img:hover {
   scale: 1.2;
@@ -898,7 +1014,7 @@ html {
 
 /* ***************************** start media query style ************************* */
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -959,7 +1075,7 @@ html {
 
 .md-green-circle {
   right: 100px;
-  top: -50px;
+  top: -30px;
 }
 .xm-red-circle {
   position: absolute;
@@ -977,7 +1093,7 @@ html {
   bottom: 290px;
   left: 260px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .lg-green-circle {
     display: none;
   }
@@ -1002,7 +1118,7 @@ html {
   border-bottom: 1px dashed rgba(184, 184, 184, 1);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .each-order-text {
     text-align: start;
   }
@@ -1050,7 +1166,45 @@ html {
 .accordion-button::after {
   content: none;
 }
-/* ****************************** start questions offers style****************** */
+.fa-minus,
+.fa-plus {
+  background-color: var(--icon-color);
+  padding: 10px 12px;
+  border-radius: 50%;
+  color: white;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .lg-green-circle {
+    bottom: -220px;
+    left: 100px;
+  }
+  .staticts-disover {
+    width: 600px;
+    margin-left: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .staticts-disover {
+    width: 550px;
+    margin-right: 50px;
+  }
+  .md-green-circle {
+    right: 0px;
+    top: -20px;
+  }
+  .sm-green-circle {
+    right: -10px;
+    top: -80px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .md-green-circle {
+    right: 50px;
+    top: -30px;
+  }
+}
+
+/* ****************************** end questions offers style****************** */
 
 /* *************************************************** Start products page style************* ************************* */
 
@@ -1093,7 +1247,7 @@ html {
   bottom: 70px;
   left: 100px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .search-img {
     position: absolute;
     left: 40px;
@@ -1158,7 +1312,7 @@ html {
   height: 100px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .row {
     display: flex;
     flex-direction: column-reverse;
@@ -1244,7 +1398,7 @@ html {
   width: 90px;
   height: 156px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .perfum {
     width: 310px;
     height: 150px;
@@ -1325,7 +1479,13 @@ html {
   top: -55px;
   right: 70px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+  .copoun-imgs {
+    margin-bottom: 300px;
+  }
+  .copoun-wrapper {
+    margin-top: 150px;
+  }
   .subtract-white {
     position: absolute;
     left: 0;
@@ -1349,6 +1509,7 @@ html {
     margin-top: 10px;
   }
 }
+
 /* ****************************** end copoun style************************************ */
 
 /* ****************************** start paymebt-gatways style************************* */
@@ -1386,9 +1547,9 @@ html {
   padding-top: 40px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .payment-gatway-wrapper {
-    margin-top: 250px;
+    /* margin-top: 200px; */
   }
 
   .payment-ga {
@@ -1433,7 +1594,7 @@ html {
   border-radius: 50%;
   right: 10px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .tasx-mangment {
     margin-bottom: 40px;
   }
@@ -1506,7 +1667,7 @@ html {
   padding: 10px 20px;
   border-radius: 20px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .dropshopping-row {
     flex-direction: column;
   }
@@ -1591,7 +1752,7 @@ html {
 .plan-btn {
   padding: 10px 40px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .row {
     gap: 80px;
     flex-direction: column;
@@ -1621,6 +1782,249 @@ html {
     top: 70px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .copoun-wrapper {
+    margin-top: 400px;
+  }
+  .copoun-imgs {
+    margin-top: -300px;
+  }
+  .tax-wrapper {
+    margin-top: 480px;
+  }
+  .discount {
+    top: 50px;
+    left: -20px;
+  }
+  .bullets {
+    bottom: 70px;
+    left: 60px;
+  }
+  .discount-50 {
+    top: 20px;
+    right: 150px;
+  }
+  .drop-shopping-all-images {
+    margin-top: 120px;
+  }
+  .happy-woman {
+    top: -70px;
+    left: 120px;
+  }
+  .green-line-subscription {
+    right: 180px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .search-img {
+    left: -50px;
+  }
+  .pen-img {
+    right: 20px;
+    width: 140px;
+  }
+  .book-img {
+    left: 0px;
+  }
+  .images-physical-product {
+    width: 100%;
+  }
+  .true-line {
+    left: 0;
+  }
+
+  .woman-pink {
+    height: 420px;
+    top: -77px;
+    left: 120px;
+  }
+
+  .shopping {
+    left: -10px;
+  }
+  .store-images {
+    width: 100%;
+  }
+  .gray-lg-line {
+    width: 150px;
+  }
+  .discount {
+    top: -30px;
+    left: -20px;
+  }
+
+  .bullets {
+    position: absolute;
+    bottom: 140px;
+    left: 60px;
+  }
+  .border-product {
+    left: 210px;
+    width: 200px;
+  }
+  .branding {
+    left: 250px;
+  }
+  .stars-product {
+    left: 220px;
+  }
+  .perfum {
+    left: 30px;
+  }
+  .subtract-white {
+    top: 11px;
+    max-height: 93%;
+  }
+  .copouns1 {
+    top: 20px;
+    left: 30px;
+  }
+  .copouns2 {
+    top: 40px;
+    left: 62px;
+  }
+  .discount-50 {
+    top: 20px;
+    right: 25px;
+  }
+
+  .white-lines {
+    left: 200px;
+  }
+  .copoun-text {
+    top: 100px;
+  }
+  .copoun-imgs {
+    margin-top: 0px;
+  }
+  .copoun-wrapper {
+    margin-top: 150px;
+  }
+  .gatways {
+    width: 380px;
+    left: 40px;
+  }
+  .pay-btn {
+    padding: 15px 50px;
+  }
+  .tax-wrapper {
+    margin-top: 100px;
+  }
+  .calculator {
+    width: 400px;
+  }
+  .bg-tax {
+    height: 476px;
+  }
+  .tax {
+    width: 300px;
+    left: 0px;
+  }
+  .percentage-tax {
+    right: 10px;
+    top: 70px;
+  }
+  .yellow-bg-droppshopping {
+    width: 90%;
+  }
+  .happy-woman {
+    height: 320px;
+    top: -10px;
+    left: 20px;
+  }
+
+  .search-outline {
+    top: 0;
+    left: 20px;
+  }
+  .green-bg-droppshoping {
+    height: 200px;
+    height: 400px;
+  }
+  .drop-shopping-all-images {
+    margin-top: 20px;
+  }
+  .man-line {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+  }
+  .border-subscription {
+    width: 100%;
+  }
+  .green-trues {
+    width: 150px;
+    left: 50px;
+  }
+  .green-line-subscription {
+    right: 50px;
+  }
+  .choose-plan {
+    left: 120px;
+  }
+  .subscription {
+    margin-bottom: 150px;
+  }
+  .white-lines {
+    left: 180px;
+    top: 200px;
+  }
+  .discount-50 {
+    top: 0px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .search-img {
+    left: 0px;
+  }
+  .pen-img {
+    right: 20px;
+    width: 160px;
+  }
+  .book-img {
+    left: 30px;
+  }
+  .subtract-white {
+    max-height: 94%;
+    top: 11px;
+  }
+  .discount-50 {
+    right: 50px;
+    top: 30px;
+  }
+  .white-lines {
+    left: 250px;
+    top: 240px;
+  }
+  .man-line {
+    bottom: -40px;
+  }
+  .happy-woman {
+    height: 370px;
+    top: 10px;
+  }
+  .choose-plan {
+    left: 160px;
+  }
+  .green-line-subscription {
+    right: 70px;
+  }
+  .green-trues {
+    left: 70px;
+  }
+  .shopping {
+    left: -10px;
+  }
+  .border-subscription {
+    width: 100%;
+  }
+  .tax {
+    width: 300px;
+    left: 0px;
+  }
+}
+
 /* ****************************** end subscription style************************* */
 
 /* *************************************************** End products page style************* ************************* */
@@ -1669,7 +2073,7 @@ html {
   position: absolute;
   right: 60px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .bus-images {
     margin-bottom: 500px;
   }
@@ -1744,7 +2148,7 @@ html {
   width: 200px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .location {
     position: absolute;
     left: 90px;
@@ -1788,7 +2192,7 @@ html {
   background-color: white;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .map {
     width: 100%;
   }
@@ -1841,11 +2245,125 @@ html {
   bottom: 20px;
   right: 10px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .row-order-traking {
     flex-direction: column;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .bus-images {
+    margin-bottom: 500px;
+  }
+  .bg-bus {
+    left: 100px;
+    width: 440px;
+  }
+  .green-border-bus-top {
+    left: 350px;
+  }
+  .green-border-bus-bottom {
+    left: 135px;
+  }
+  .bus {
+    width: 500px;
+    height: 410px;
+    left: 145px;
+  }
+  .white-polgon {
+    left: 200px;
+    top: -50px;
+  }
+  .world {
+    position: absolute;
+    left: 550px;
+    top: 0;
+  }
+  .location-line {
+    position: absolute;
+    bottom: 100px;
+    right: 320px;
+  }
+  .green-location-bullets {
+    right: 300px;
+  }
+  .shipping-rate-lines {
+    position: absolute;
+    left: 200px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .bg-bus {
+    left: 50px;
+    width: 300px;
+  }
+  .green-border-bus-top {
+    left: 210px;
+    top: 0;
+  }
+  .green-border-bus-bottom {
+    left: 30px;
+    top: 330px;
+  }
+  .bus {
+    width: 450px;
+    height: 410px;
+    left: 50px;
+  }
+  .white-polgon {
+    left: 30px;
+    top: -20px;
+  }
+  .world {
+    position: absolute;
+    left: 370px;
+    top: 0;
+  }
+  .location-line {
+    position: absolute;
+    bottom: 100px;
+    right: 120px;
+  }
+  .green-location-bullets {
+    right: 100px;
+  }
+  .shipping-rate-lines {
+    position: absolute;
+    left: 50px;
+  }
+  .card-shipping-rate {
+    top: -30px;
+    right: 100px;
+  }
+  .map {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .bus {
+    width: 450px;
+    left: 65px;
+  }
+  .world {
+    right: 0px;
+  }
+  .white-polgon {
+    top: -50px;
+  }
+  .location-line {
+    right: 220px;
+  }
+  .green-location-bullets {
+    right: 210px;
+  }
+  .shipping-rate-lines {
+    position: absolute;
+    left: 50px;
+  }
+  .map {
+    width: 100%;
+  }
+}
+
 /* ****************************** end order traking style************************* */
 /* *************************************************** end shipping page style************* ************************* */
 
@@ -1931,7 +2449,7 @@ html {
   height: 20px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .green-circle-transaction {
     position: absolute;
     top: 0px;
@@ -2085,7 +2603,7 @@ html {
 /* ******************************end Integration styles ***********************/
 
 /* ******************************start Fees,Cryptocurrency,Integration media query styles ***********************/
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .bg-Cryptocurrency {
     width: 100%;
   }
@@ -2126,20 +2644,222 @@ html {
     width: 443px;
   }
   .code-icon-integration {
-    position: absolute;
-    padding: 10px;
     top: 170px;
     right: 20px;
   }
   .girle-icon-integration {
-    position: absolute;
-    padding: 15px;
     top: 0px;
     left: 30px;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg-Cryptocurrency,
+  .integration .bg-Cryptocurrency {
+    width: 100%;
+  }
+  .financial-payment-Cryptocurrency {
+    top: 29px;
+    width: 550px;
+    height: 417px;
+    left: 70px;
+  }
+  .true-Cryptocurrency {
+    top: 120px;
+    left: 0px;
+    width: 500px;
+    height: 60px;
+  }
+  .payment-text {
+    top: 180px;
+    left: 220px;
+  }
+  .Cryptocurrency-payment-types {
+    position: absolute;
+    left: 210px;
+  }
+  .Crypto-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .code-icon-integration {
+    top: 140px;
+    right: 150px;
+  }
+  .girle-icon-integration {
+    top: 150px;
+    left: -20px;
+  }
+  .man-hand {
+    left: 10px;
+  }
+  .black-bg1-transaction,
+  .black-bg2-transaction {
+    left: 173px;
+  }
+  .lock {
+    right: 150px;
+  }
+  .payment-images {
+    top: 30px;
+  }
+  .select-gatway {
+    top: 30px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .bg-Cryptocurrency,
+  .integration .bg-Cryptocurrency {
+    width: 100%;
+  }
+  .map-payments {
+    width: 100%;
+  }
+  .bg-transaction {
+    width: 100%;
+  }
+  .payment-images {
+    width: 230px;
+    height: 320px;
+    left: 100px;
+    top: 20px;
+  }
+  .select-gatway {
+    left: 50px;
+    top: 0px;
+  }
+  .green-circle-transaction {
+    left: 200px;
+    top: -30px;
+  }
+  .above-arrow-transaction {
+    position: absolute;
+    left: 215px;
+    top: -10px;
+  }
+
+  .bottom-arrow-transaction {
+    position: absolute;
+    left: 215px;
+    top: 20px;
+  }
+  .lock {
+    right: -40px;
+  }
+  .black-bg1-transaction {
+    left: 163px;
+    top: 110px;
+  }
+  .black-bg2-transaction {
+    left: 163px;
+    top: 120px;
+  }
+  .financial-payment-Cryptocurrency {
+    width: 380px;
+    left: 67px;
+    top: 100px;
+  }
+  .true-Cryptocurrency {
+    top: 150px;
+    left: 145px;
+    width: 100px;
+    height: 30px;
+  }
+  .payment-text {
+    top: 180px;
+    left: 160px;
+  }
+  .Cryptocurrency-payment-types {
+    position: absolute;
+    left: 155px;
+  }
+  .Crypto-icon {
+    width: 12px;
+    height: 12px;
+  }
+  .realistic-laptop-integration {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 400px;
+  }
+  .code-icon-integration {
+    top: 160px;
+    right: 0px;
+  }
+  .girle-icon-integration {
+    top: 150px;
+    left: -20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .bg-Cryptocurrency,
+  .integration {
+    width: 100%;
+  }
+  .map-payments {
+    width: 100%;
+  }
+  .bg-transaction {
+    width: 100%;
+  }
+  .green-circle-transaction {
+    top: 50px;
+  }
+  .above-arrow-transaction {
+    top: 70px;
+  }
+
+  .bottom-arrow-transaction {
+    top: 100px;
+  }
+  .black-bg1-transaction {
+    top: 180px;
+  }
+
+  .black-bg2-transaction {
+    top: 200px;
+  }
+  .lock {
+    right: 0;
+  }
+
+  .financial-payment-Cryptocurrency {
+    width: 550px;
+    left: 20px;
+    top: 7px;
+  }
+  .true-Cryptocurrency {
+    top: 100px;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+  }
+  .payment-text {
+    top: 160px;
+    left: 170px;
+  }
+  .Cryptocurrency-payment-types {
+    position: absolute;
+    left: 160px;
+  }
+  .Crypto-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .realistic-laptop-integration {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 450px;
+  }
+}
+
 /* ******************************end Fees,Cryptocurrency,Integration media query styles ***********************/
 /* *************************************************** end Payment-Gatways page style************* ************************* */
+
+/* *************************************************** start physical-digital product page style************* ************************* */
+/* ******************************start digital product section styles ***********************/
 .digital-bg {
   width: 640px;
 }
@@ -2197,7 +2917,7 @@ html {
   bottom: 50px;
   left: 20px;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .digital-bg {
     width: 100%;
   }
@@ -2219,7 +2939,10 @@ html {
     left: 10px;
   }
 }
-/* ** */
+
+/* ******************************ene digital product section styles ***********************/
+
+/* ******************************start physical product section styles ***********************/
 .cardboard-boxes-physical-products {
   width: 700px;
 }
@@ -2260,3 +2983,285 @@ html {
     width: 95%;
   }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .digital-bg,
+  .cardboard-boxes-physical-products {
+    width: 90%;
+  }
+  .digital-man-smiling {
+    width: 480px;
+    height: 400px;
+    right: 50px;
+  }
+  .brunette-girl-physical {
+    bottom: 0;
+    right: 30px;
+    height: 420px;
+    right: 100px;
+  }
+  .black-digital-shadow,
+  .black-physical-shadow {
+    width: 87%;
+    left: 10px;
+  }
+  .digital-frame {
+    top: 100px;
+    right: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .digital-bg,
+  .cardboard-boxes-physical-products {
+    width: 100%;
+  }
+  .black-digital-shadow,
+  .black-physical-shadow {
+    width: 95.5%;
+    left: 10px;
+  }
+  .digital-man-smiling {
+    height: 320px;
+    right: -10px;
+  }
+  .brunette-girl-physical {
+    height: 320px;
+  }
+  .digital-frame {
+    top: 50px;
+    right: 30px;
+  }
+  .circle-digital-product {
+    width: 120px;
+  }
+}
+
+/* ******************************end physical product section styles ***********************/
+/* *************************************************** end physical-digital page style************* ************************* */
+
+/* *************************************************** start subscription mangment page style************* ************************* */
+/* ******************************start subscription plan section styles ***********************/
+.each-plan {
+  width: 203px;
+  height: 329px;
+  border-radius: 15px;
+  background-color: white;
+}
+.title-each-plan {
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+}
+.choose-plan-btn {
+  padding: 10px 15px;
+}
+.plan1 {
+  position: absolute;
+  left: 60px;
+  top: 120px;
+}
+.plan2 {
+  position: absolute;
+  left: 200px;
+  z-index: 1;
+}
+.plan3 {
+  position: absolute;
+  right: 90px;
+  top: 90px;
+  background-color: white;
+}
+.green-Polygon-subscription {
+  position: absolute;
+  top: 70px;
+  left: 130px;
+}
+.red-lg-star-subscription1 {
+  position: absolute;
+  top: 60px;
+  right: 170px;
+  z-index: -1;
+}
+.red-lg-star-subscription2 {
+  position: absolute;
+  bottom: 0;
+  right: 320px;
+}
+/* ******************************end subscription plan section styles ***********************/
+
+/* ******************************start seamless mangment section styles ***********************/
+.bg-mangment {
+  width: 480px;
+  height: 360px;
+}
+.active-subscriber {
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  width: 440px;
+  height: 300px;
+  top: -40px;
+  left: -30px;
+  padding: 10px 20px;
+}
+.photo {
+  margin-left: -20px;
+  margin-top: 5px;
+}
+.plus-mangment {
+  margin-left: -15px;
+}
+
+.line-mangment {
+  width: 395.5px;
+  height: 150.5px;
+  position: absolute;
+  bottom: 20px;
+}
+.rate {
+  position: absolute;
+  bottom: 0;
+}
+.rate-stars {
+  padding: 0px 20px;
+  width: 270px;
+
+  border-radius: 20px;
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+  background-color: white;
+}
+/* ******************************end seamless mangment section styles ***********************/
+
+/* ******************************start seamless mangment , subscription plan media query styles ***********************/
+@media (max-width: 768px) {
+  .wrapper-subscription {
+    margin-bottom: 500px;
+  }
+  .plan1 {
+    left: 20px;
+  }
+  .plan2 {
+    left: 150px;
+  }
+  .plan3 {
+    right: 0px;
+    top: 90px;
+  }
+  .green-Polygon-subscription {
+    left: 100px;
+  }
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 80px;
+  }
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 220px;
+  }
+  .active-subscriber {
+    width: 350px;
+    height: 300px;
+    left: 0px;
+  }
+  .bg-mangment {
+    width: 100%;
+  }
+
+  .line-mangment {
+    width: 90%;
+  }
+
+  .rate-stars {
+    width: 250px;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .wrapper-subscription {
+    margin-bottom: 500px;
+  }
+  .plan1 {
+    left: 140px;
+  }
+  .plan2 {
+    left: 270px;
+  }
+  .plan3 {
+    right: 100px;
+    top: 90px;
+  }
+  .green-Polygon-subscription {
+    left: 190px;
+  }
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 150px;
+  }
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 320px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .wrapper-subscription {
+    margin-bottom: 50px;
+  }
+  .red-lg-star-subscription2 {
+    bottom: -420px;
+    right: 310px;
+  }
+  .plan1 {
+    left: 0px;
+  }
+  .plan2 {
+    left: 120px;
+  }
+  .plan3 {
+    right: 0px;
+    top: 90px;
+  }
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 90px;
+  }
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 220px;
+  }
+  .green-Polygon-subscription {
+    left: 50px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .plan1 {
+    left: 50px;
+  }
+  .plan2 {
+    left: 190px;
+  }
+  .green-Polygon-subscription {
+    left: 100px;
+  }
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 240px;
+  }
+  .rate-stars {
+    bottom: 140px;
+  }
+  .plan3 {
+    right: 0px;
+    top: 90px;
+  }
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 90px;
+  }
+}
+
+/* ******************************end seamless mangment , subscription plan media query styles ***********************/
+/* *************************************************** end subscription mangment page style************* ************************* */

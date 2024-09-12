@@ -72,17 +72,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ************************************************************************
-document.querySelectorAll(".accordion-header img").forEach((img) => {
-  img.addEventListener("click", function () {
+
+document.querySelectorAll(".accordion-header .icon-toggle").forEach((icon) => {
+  icon.addEventListener("click", function () {
     const button = this.nextElementSibling;
 
     button.click();
 
-    // Toggle the image src based on the button's collapsed state
-    if (button.classList.contains("collapsed")) {
-      this.src = "../images/discover-img/plus.svg";
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+    // Update the icon class based on the expanded state
+    if (isExpanded) {
+      this.classList.remove("fa-plus");
+      this.classList.add("fa-minus");
     } else {
-      this.src = "../images/discover-img/mnuis.svg";
+      this.classList.remove("fa-minus");
+      this.classList.add("fa-plus");
     }
   });
 });
+
