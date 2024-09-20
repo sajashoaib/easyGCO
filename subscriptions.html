@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="css/aos.css" rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -22,7 +22,7 @@
   <body>
     <div class="container-fluid header position-relative overflow-hidden p-0">
       <!-- ------------start navbar ------------------- -->
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
           <img src="images/logo-img.svg" alt="" class="logo" />
           <button
@@ -76,14 +76,14 @@
         class="landing-shpping d-flex justify-content-center align-items-center mb-30"
       >
         <div class="container">
-          <div class="text-center">
-            <h2 class="fw-400 fs-70 lh-114 color-subhead1 fs-sm-40 lh-sm-80">
+          <div class="text-center subscription-plan-text">
+            <h2 class="fw-400 fs-70 lh-114 color-subhead1 fs-md-50 lh-sm-80 fs-xxm-30 lh-xxm-50 lh-md-90" >
               Manage Subscriptions with EasyGCO
             </h2>
-            <span class="fw-400 fs-24 lh-32 color-subhead2 d-block"
+            <span class="fw-400 fs-24 lh-32 color-subhead2 d-block fs-xxm-20 lh-xxm-40"
               >Recurring Revenue Made Simple</span
             >
-            <p class="fs-20 fw-400 lh-32 color-paragraph2 fs-sm-16">
+            <p class="fs-20 fw-400 lh-32 color-paragraph2 fs-xxm-16">
               Grow your business and secure a steady stream of income by
               offering subscription services with EasyGCO. Our platform provides
               all the tools you need to set up, manage, and optimize
@@ -300,7 +300,7 @@
                 <div
                   class="d-flex align-items-center justify-content-between gap-5 rate"
                 >
-                  <p class="fw-400 fs-20 dark-color pr-10 fs-sm-16">
+                  <p class="fw-400 fs-20 dark-color pr-10 fs-sm-16 fs-xxm-12">
                     Churn rate;
                     <span class="fw-600 fs-20 color-paragraph6 fs-sm-16"
                       >0.5%</span
@@ -310,10 +310,13 @@
                     <img
                       src="images/subscription/lg-line-mangment.svg"
                       alt=""
+                      class="lg-line-mangment"
                     />
                     <img
                       src="images/subscription/lg-line-mangment.svg"
                       alt=""
+                      class="lg-line-mangment"
+
                     />
                   </div>
                 </div>
@@ -332,7 +335,7 @@
                 />
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 seamless-mangment-texts">
               <h4 class="fw-500 fs-30 lh-46 color-subhead1">
                 Seamless Management
               </h4>
@@ -384,104 +387,47 @@
       <!-- ------------end seamless-Management section ------------------- -->
 
       <!-- ------------start join section ------------------- -->
-      <div class="join pt-5 pb-5">
+      <div class="join pt-5 pb-5 ">
         <div class="container">
-          <div
-            class="row d-flex justify-content-center align-items-center position-relative"
-          >
+          <div class="row d-flex justify-content-center align-items-center position-relative">
             <div class="col-12 position-relative">
               <div class="d-flex justify-content-start mt-5 mb-5">
-                <img
-                  src="images/pers-1.svg"
-                  alt=""
-                  class="per1"
-                  data-aos="fade-right"
-                />
+                <img data-src="images/pers-1.svg" alt="" class="per1 lazyload" data-aos="fade-right" />
               </div>
               <div>
                 <div class="position-relative">
-                  <img
-                    src="images/sm-stat.svg"
-                    alt=""
-                    data-aos="flip-right"
-                    class="sm-star"
-                  />
-                  <img
-                    src="images/lg-star.svg"
-                    alt=""
-                    data-aos="flip-right"
-                    class="lg-star"
-                  />
+                  <img data-src="images/sm-stat.svg" alt="" data-aos="flip-right" class="sm-star lazyload" />
+                  <img data-src="images/lg-star.svg" alt="" data-aos="flip-right" class="lg-star lazyload" />
                 </div>
                 <div class="text p-3">
-                  <h3 class="fs-60 lh-70 dark-color text-center fw-400">
-                    Join Thousands of
-                    <span
-                      class="d-block fs-70 fw-600 lh-70 text-center fs-sm-60 color-red fs-xm-40"
-                      >Successful Businesses
-                    </span>
-                  </h3>
-                  <p class="fs-24 fw-400 lh-35 text-center color-paragraph9">
+                  <h3 class="fs-60 fs-xxm-40  lh-70 dark-color text-center fw-400 ">Join Thousands of <span
+                      class="d-lg-block fs-70 fw-600 lh-70 text-center fs-sm-60 color-red fs-xm-40 fs-xxm-40 ">Successful Businesses
+                    </span></h3>
+                  <p class="fs-24 fw-400 lh-35 text-center color-paragraph9 fs-xxm-22">
                     Start your e-commerce journey with EasyGCO and watch your
                     business grow.
                   </p>
                   <div class="d-flex justify-content-center align-items-center">
-                    <a class="btn main-btn two rounded-pill fs-sm-16" href="#"
-                      >Get Started</a
-                    >
-
-                    <a
-                      class="btn main-btn one rounded-pill contact fs-sm-16"
-                      href="#"
-                      >Contact Us</a
-                    >
+                    <a class="btn main-btn two rounded-pill fs-sm-16 " href="#">Get Started</a>
+  
+                    <a class="btn main-btn one rounded-pill contact  fs-sm-16 " href="#">Contact Us</a>
                   </div>
                 </div>
                 <div>
-                  <img
-                    src="images/pers-2.svg"
-                    alt=""
-                    class="per2"
-                    data-aos="fade-left"
-                  />
+                  <img src="images/pers-2.svg" alt="" class="per2 lazyload" data-aos="fade-left" />
                 </div>
               </div>
               <div class="d-flex justify-content-start align-items-center m-5">
-                <img
-                  src="images/pers-3.svg"
-                  alt=""
-                  class="per3"
-                  data-aos="fade-down-right"
-                />
+                <img data-src="images/pers-3.svg" alt="" class="per3 lazyload" data-aos="fade-down-right" />
               </div>
               <div class="d-flex justify-content-center">
-                <img
-                  src="images/pers-4.svg"
-                  alt=""
-                  class="per4"
-                  data-aos="flip-down"
-                />
+                <img data-src="images/pers-4.svg" alt="" class="per4 lazyload" data-aos="flip-down" />
               </div>
-
-              <img
-                src="images/Polygon 5.svg"
-                alt=""
-                class="pologon5"
-                data-aos="flip-down"
-              />
-              <img
-                src="images/full-circle.svg"
-                alt=""
-                class="circle5"
-                data-aos="flip-down"
-              />
+  
+              <img data-src="images/Polygon 5.svg" alt="" class="pologon5 lazyload" data-aos="flip-down" />
+              <img data-src="images/full-circle.svg" alt="" class="circle5 lazyload" data-aos="flip-down" />
               <div class="d-flex justify-content-end align-items-end">
-                <img
-                  src="images/pers-5.svg"
-                  alt=""
-                  class="per5"
-                  data-aos="fade-up-left"
-                />
+                <img data-src="images/pers-5.svg" alt="" class="per5 lazyload" data-aos="fade-up-left" />
               </div>
             </div>
           </div>
@@ -495,7 +441,7 @@
           <div class="row" data-aos="fade-up">
             <div class="col-md-6 col-lg-4">
               <div class="info mb-3">
-                <img src="images/logo.png" alt="" class="mb-4" />
+                <img src="images/logo-img.svg" alt="" class="mb-4" />
                 <p class="mb-5">
                   "EasyGCO: Your all-in-one e-commerce solution, offering
                   powerful tools to build, manage, and grow your online store
@@ -568,9 +514,11 @@
         </div>
       </div>
       <!-- ------------end footer section ------------------- -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="./js/main.js"></script>
+      <script src="https://upload-widget.cloudinary.com/global/all.js"></script>
+      <script src="./js/lazysizes.min.js"></script>
+      <script src="./js/aos.js"></script>
+       <script src="js/bootstrap.bundle.min.js"></script>
+       <script src="./js/main.js"></script>
     </div>
   </body>
 </html>

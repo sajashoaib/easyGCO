@@ -1959,161 +1959,6 @@ html {
 /* ******************************end seamless mangment section styles ***********************/
 
 /* ******************************start seamless mangment , subscription plan media query styles ***********************/
-@media (max-width: 768px) {
-  .wrapper-subscription {
-    margin-bottom: 500px;
-  }
-
-  .plan1 {
-    left: 20px;
-  }
-
-  .plan2 {
-    left: 150px;
-  }
-
-  .plan3 {
-    right: 0px;
-    top: 90px;
-  }
-
-  .green-Polygon-subscription {
-    left: 100px;
-  }
-
-  .red-lg-star-subscription1 {
-    top: 60px;
-    right: 80px;
-  }
-
-  .red-lg-star-subscription2 {
-    top: 350px;
-    right: 220px;
-  }
-
-  .active-subscriber {
-    width: 350px;
-    height: 300px;
-    left: 0px;
-  }
-
-  .bg-mangment {
-    width: 100%;
-  }
-
-  .line-mangment {
-    width: 90%;
-  }
-
-  .rate-stars {
-    width: 250px;
-    bottom: 0px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .wrapper-subscription {
-    margin-bottom: 500px;
-  }
-
-  .plan1 {
-    left: 140px;
-  }
-
-  .plan2 {
-    left: 270px;
-  }
-
-  .plan3 {
-    right: 100px;
-    top: 90px;
-  }
-
-  .green-Polygon-subscription {
-    left: 190px;
-  }
-
-  .red-lg-star-subscription1 {
-    top: 60px;
-    right: 150px;
-  }
-
-  .red-lg-star-subscription2 {
-    top: 350px;
-    right: 320px;
-  }
-}
-
-@media (min-width: 991px) and (max-width: 1200px) {
-  .wrapper-subscription {
-    margin-bottom: 50px;
-  }
-
-  .red-lg-star-subscription2 {
-    bottom: -420px;
-    right: 310px;
-  }
-
-  .plan1 {
-    left: 0px;
-  }
-
-  .plan2 {
-    left: 120px;
-  }
-
-  .plan3 {
-    right: 0px;
-    top: 90px;
-  }
-
-  .red-lg-star-subscription1 {
-    top: 60px;
-    right: 90px;
-  }
-
-  .red-lg-star-subscription2 {
-    top: 350px;
-    right: 220px;
-  }
-
-  .green-Polygon-subscription {
-    left: 50px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .plan1 {
-    left: 50px;
-  }
-
-  .plan2 {
-    left: 190px;
-  }
-
-  .green-Polygon-subscription {
-    left: 100px;
-  }
-
-  .red-lg-star-subscription2 {
-    top: 350px;
-    right: 240px;
-  }
-
-  .rate-stars {
-    bottom: 140px;
-  }
-
-  .plan3 {
-    right: 0px;
-    top: 90px;
-  }
-
-  .red-lg-star-subscription1 {
-    top: 60px;
-    right: 90px;
-  }
-}
 
 /* ******************************end seamless mangment , subscription plan media query styles ***********************/
 /* *************************************************** end subscription mangment page style************* ************************* */
@@ -2621,6 +2466,20 @@ html {
   .financial-payment-Cryptocurrency {
     height: 417px;
   }
+
+  .plan2 {
+    left: 110px;
+    top: 40px;
+  }
+
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 150px;
+  }
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 30px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 413px) {
@@ -2706,6 +2565,18 @@ html {
   .financial-payment-Cryptocurrency {
     height: 417px;
   }
+  .plan2 {
+    left: 110px;
+    top: 40px;
+  }
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 160px;
+  }
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 50px;
+  }
 }
 
 @media (min-width: 413px) and (max-width: 768px) {
@@ -2789,6 +2660,18 @@ html {
   }
   .financial-payment-Cryptocurrency {
     height: 455px;
+  }
+  .plan2 {
+    left: 130px;
+    top: 40px;
+  }
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 180px;
+  }
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 50px;
   }
 }
 
@@ -3111,6 +2994,40 @@ html {
   .digital-frame {
     top: 100px;
     right: 100px;
+  }
+  /* subscription page  */
+  .wrapper-subscription {
+    margin-bottom: 500px;
+  }
+
+  .plan1 {
+    left: 140px;
+  }
+
+  .plan2 {
+    left: 270px;
+  }
+
+  .plan3 {
+    right: 100px;
+    top: 90px;
+  }
+
+  .green-Polygon-subscription {
+    left: 190px;
+  }
+
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 150px;
+  }
+
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 320px;
+  }
+  .subscription-plan-text {
+    margin-top: -30px;
   }
 }
 
@@ -3593,6 +3510,45 @@ html {
   .circle-digital-product {
     width: 120px;
   }
+  /* subscription page */
+  .wrapper-subscription {
+    margin-bottom: 50px;
+  }
+
+  .red-lg-star-subscription2 {
+    bottom: -420px;
+    right: 310px;
+  }
+
+  .plan1 {
+    left: 0px;
+  }
+
+  .plan2 {
+    left: 120px;
+  }
+
+  .plan3 {
+    right: 0px;
+    top: 90px;
+  }
+
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 90px;
+  }
+
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 220px;
+  }
+
+  .green-Polygon-subscription {
+    left: 50px;
+  }
+  .subscription-plan-text {
+    margin-top: 120px;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -3805,6 +3761,41 @@ html {
     top: 100px;
     left: 50px;
     width: 450px;
+  }
+  /* subscription page */
+  .plan1 {
+    left: 50px;
+  }
+
+  .plan2 {
+    left: 190px;
+  }
+
+  .green-Polygon-subscription {
+    left: 100px;
+  }
+
+  .red-lg-star-subscription2 {
+    top: 350px;
+    right: 240px;
+  }
+
+  .rate-stars {
+    bottom: 140px;
+  }
+
+  .plan3 {
+    right: 0px;
+    top: 90px;
+  }
+
+  .red-lg-star-subscription1 {
+    top: 60px;
+    right: 90px;
+  }
+  .subscription-plan-text {
+    padding: 100px 0 100px 0;
+    margin-bottom: 100px;
   }
 }
 
@@ -4622,6 +4613,55 @@ html {
   }
   .brunette-girl-physical {
     height: 300px;
+  }
+  /* subcription page */
+  .landing-shpping {
+    padding: 60px 0;
+  }
+  .each-plan {
+    width: 150px;
+    height: 300px;
+  }
+
+  .wrapper-subscription {
+    margin-bottom: 500px;
+  }
+
+  .plan1 {
+    left: 10px;
+  }
+
+  .plan3 {
+    right: 0px;
+    top: 90px;
+  }
+  .green-Polygon-subscription {
+    left: 60px;
+  }
+  .bg-mangment {
+    width: 100%;
+  }
+  .active-subscriber {
+    width: 300px;
+    height: 300px;
+    left: 0px;
+  }
+  .lg-line-mangment {
+    width: 50px;
+  }
+  .line-mangment {
+    width: 90%;
+  }
+
+  .rate-stars {
+    width: 250px;
+    bottom: 0px;
+  }
+  .seamless-mangment-texts {
+    margin-top: 80px;
+  }
+  .subscription-plan-text {
+    margin-top: -40px;
   }
 }
 
