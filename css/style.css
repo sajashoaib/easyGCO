@@ -1602,24 +1602,6 @@ html {
   height: 20px;
 }
 
-@media (max-width: 768px) {
- 
-
-  .lock {
-    position: absolute;
-    right: 0px;
-    top: 60px;
-    width: 130px;
-    height: 130px;
-  }
-
- 
-
-
-
-
-}
-
 /* ******************************end transaction styles ***********************/
 
 /* ******************************start curriences styles ***********************/
@@ -1755,311 +1737,6 @@ html {
 }
 
 /* ******************************end Integration styles ***********************/
-
-/* ******************************start Fees,Cryptocurrency,Integration media query styles ***********************/
-@media (max-width: 768px) {
-  .bg-Cryptocurrency {
-    width: 100%;
-  }
-
-  .financial-payment-Cryptocurrency {
-    position: absolute;
-    top: 29px;
-    width: 390px;
-    height: 417px;
-    left: 70px;
-  }
-
-  .arrow-Cryptocurrency {
-    position: absolute;
-    top: 60px;
-    right: 10px;
-  }
-
-  .true-Cryptocurrency {
-    position: absolute;
-    top: 150px;
-    left: 180px;
-    width: 30px;
-    height: 30px;
-  }
-
-  .payment-text {
-    position: absolute;
-    top: 180px;
-    left: 170px;
-  }
-
-  .Cryptocurrency-payment-types {
-    position: absolute;
-    left: 162px;
-  }
-
-  .Crypto-icon {
-    width: 12px;
-    height: 12px;
-  }
-
-  .realistic-laptop-integration {
-    width: 443px;
-  }
-
-  .code-icon-integration {
-    top: 170px;
-    right: 20px;
-  }
-
-  .girle-icon-integration {
-    top: 0px;
-    left: 30px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .bg-Cryptocurrency,
-  .integration .bg-Cryptocurrency {
-    width: 100%;
-  }
-
-  .financial-payment-Cryptocurrency {
-    top: 29px;
-    width: 550px;
-    height: 417px;
-    left: 70px;
-  }
-
-  .true-Cryptocurrency {
-    top: 120px;
-    left: 0px;
-    width: 500px;
-    height: 60px;
-  }
-
-  .payment-text {
-    top: 180px;
-    left: 220px;
-  }
-
-  .Cryptocurrency-payment-types {
-    position: absolute;
-    left: 210px;
-  }
-
-  .Crypto-icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .code-icon-integration {
-    top: 140px;
-    right: 150px;
-  }
-
-  .girle-icon-integration {
-    top: 150px;
-    left: -20px;
-  }
-
-  .man-hand {
-    left: 10px;
-  }
-
-  .black-bg1-transaction,
-  .black-bg2-transaction {
-    left: 173px;
-  }
-
-  .lock {
-    right: 150px;
-  }
-
-  .payment-images {
-    top: 30px;
-  }
-
-  .select-gatway {
-    top: 30px;
-  }
-}
-
-@media (min-width: 991px) and (max-width: 1200px) {
-  .bg-Cryptocurrency,
-  .integration .bg-Cryptocurrency {
-    width: 100%;
-  }
-
-  .map-payments {
-    width: 100%;
-  }
-
-  .bg-transaction {
-    width: 100%;
-  }
-
-  .payment-images {
-    width: 230px;
-    height: 320px;
-    left: 100px;
-    top: 20px;
-  }
-
-  .select-gatway {
-    left: 50px;
-    top: 0px;
-  }
-
-  .green-circle-transaction {
-    left: 200px;
-    top: -30px;
-  }
-
-  .above-arrow-transaction {
-    position: absolute;
-    left: 215px;
-    top: -10px;
-  }
-
-  .bottom-arrow-transaction {
-    position: absolute;
-    left: 215px;
-    top: 20px;
-  }
-
-  .lock {
-    right: -40px;
-  }
-
-  .black-bg1-transaction {
-    left: 163px;
-    top: 110px;
-  }
-
-  .black-bg2-transaction {
-    left: 163px;
-    top: 120px;
-  }
-
-  .financial-payment-Cryptocurrency {
-    width: 380px;
-    left: 67px;
-    top: 100px;
-  }
-
-  .true-Cryptocurrency {
-    top: 150px;
-    left: 145px;
-    width: 100px;
-    height: 30px;
-  }
-
-  .payment-text {
-    top: 180px;
-    left: 160px;
-  }
-
-  .Cryptocurrency-payment-types {
-    position: absolute;
-    left: 155px;
-  }
-
-  .Crypto-icon {
-    width: 12px;
-    height: 12px;
-  }
-
-  .realistic-laptop-integration {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    width: 400px;
-  }
-
-  .code-icon-integration {
-    top: 160px;
-    right: 0px;
-  }
-
-  .girle-icon-integration {
-    top: 150px;
-    left: -20px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .bg-Cryptocurrency,
-  .integration {
-    width: 100%;
-  }
-
-  .map-payments {
-    width: 100%;
-  }
-
-  .bg-transaction {
-    width: 100%;
-  }
-
-  .green-circle-transaction {
-    top: 50px;
-  }
-
-  .above-arrow-transaction {
-    top: 70px;
-  }
-
-  .bottom-arrow-transaction {
-    top: 100px;
-  }
-
-  .black-bg1-transaction {
-    top: 180px;
-  }
-
-  .black-bg2-transaction {
-    top: 200px;
-  }
-
-  .lock {
-    right: 0;
-  }
-
-  .financial-payment-Cryptocurrency {
-    width: 550px;
-    left: 20px;
-    top: 7px;
-  }
-
-  .true-Cryptocurrency {
-    top: 100px;
-    left: 150px;
-    width: 100px;
-    height: 50px;
-  }
-
-  .payment-text {
-    top: 160px;
-    left: 170px;
-  }
-
-  .Cryptocurrency-payment-types {
-    position: absolute;
-    left: 160px;
-  }
-
-  .Crypto-icon {
-    width: 15px;
-    height: 15px;
-  }
-
-  .realistic-laptop-integration {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    width: 450px;
-  }
-}
-
-/* ******************************end Fees,Cryptocurrency,Integration media query styles ***********************/
 /* *************************************************** end Payment-Gatways page style************* ************************* */
 
 /* *************************************************** start physical-digital product page style************* ************************* */
@@ -3009,65 +2686,44 @@ html {
     bottom: 20px;
     right: 10px;
   }
- 
-  .man-hand {
-    left: 10px;
-    width: 70%;
+
+  .black-bg1-transaction {
+    left: 118px;
+    top: 80px;
+    width: 90px;
+  }
+
+  .black-bg2-transaction {
+    top: 90px;
+    left: 119px;
+    width: 90px;
+  }
+  .transaction-sm-star {
+    bottom: 10px;
+    left: 200px;
+  }
+  .transaction-lg-star {
+    position: absolute;
+    bottom: 0px;
+    left: 220px;
+  }
+  .transaction-texts {
+    margin: 80px 0 80px 0;
+  }
+  .green-circle-transaction {
+    left: 145px;
+  }
+  .above-arrow-transaction {
+    left: 150px;
+  }
+  .bottom-arrow-transaction {
+    left: 150px;
+  }
+
+  .financial-payment-Cryptocurrency {
+    height: 417px;
+  }
 }
-.bg-transaction {
-  width: 100%;
-}
-.green-circle-transaction {
-  top: 0px;
-  width: 50px;
-  left: 145px;
-}
-.above-arrow-transaction {
-  left: 150px;
-  top: 10px;
-  width: 40px;
-}
-.bottom-arrow-transaction {
-  left: 150px;
-  top: 30px;
-  width: 40px;
-}
-.black-bg1-transaction {
-  left: 118px;
-  top: 80px;
-  width: 90px;
-}
-
-.black-bg2-transaction {
- 
-  top: 90px;
-  left: 119px;
-  width: 90px;
-
-}
-.transaction-sm-star {
-  bottom: 10px;
-  left: 200px;
-}
-.transaction-lg-star {
-  position: absolute;
-  bottom: 0px;
-  left: 220px;
-}
-.transaction-texts{
-  margin: 80px 0 80px 0;
-}
-}
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 375px) and (max-width: 413px) {
   .bg-landing-index {
@@ -3129,6 +2785,29 @@ html {
     bottom: 45px;
     right: 10px;
   }
+  .black-bg1-transaction {
+    left: 123px;
+    top: 80px;
+    width: 90px;
+  }
+
+  .black-bg2-transaction {
+    top: 90px;
+    left: 124px;
+    width: 90px;
+  }
+  .green-circle-transaction {
+    left: 145px;
+  }
+  .above-arrow-transaction {
+    left: 150px;
+  }
+  .bottom-arrow-transaction {
+    left: 150px;
+  }
+  .financial-payment-Cryptocurrency {
+    height: 417px;
+  }
 }
 
 @media (min-width: 413px) and (max-width: 768px) {
@@ -3189,6 +2868,29 @@ html {
   .green-location-bullets {
     bottom: 45px;
     right: 10px;
+  }
+  .black-bg1-transaction {
+    left: 134px;
+    top: 80px;
+    width: 90px;
+  }
+
+  .black-bg2-transaction {
+    top: 90px;
+    left: 135px;
+    width: 90px;
+  }
+  .green-circle-transaction {
+    left: 160px;
+  }
+  .above-arrow-transaction {
+    left: 165px;
+  }
+  .bottom-arrow-transaction {
+    left: 165px;
+  }
+  .financial-payment-Cryptocurrency {
+    height: 455px;
   }
 }
 
@@ -3415,6 +3117,70 @@ html {
   }
   .each-order-traking {
     width: 460px;
+  }
+  .bg-Cryptocurrency,
+  .integration .bg-Cryptocurrency {
+    width: 100%;
+  }
+
+  .financial-payment-Cryptocurrency {
+    top: 29px;
+    width: 550px;
+    height: 417px;
+    left: 70px;
+  }
+
+  .true-Cryptocurrency {
+    top: 120px;
+    left: 0px;
+    width: 500px;
+    height: 60px;
+  }
+
+  .payment-text {
+    top: 180px;
+    left: 220px;
+  }
+
+  .Cryptocurrency-payment-types {
+    position: absolute;
+    left: 210px;
+  }
+
+  .Crypto-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .code-icon-integration {
+    top: 140px;
+    right: 150px;
+  }
+
+  .girle-icon-integration {
+    top: 150px;
+    left: -20px;
+  }
+
+  .man-hand {
+    left: 10px;
+  }
+
+  .black-bg1-transaction,
+  .black-bg2-transaction {
+    left: 173px;
+  }
+
+  .lock {
+    right: 150px;
+  }
+
+  .payment-images {
+    top: 30px;
+  }
+
+  .select-gatway {
+    top: 30px;
   }
 }
 
@@ -3767,6 +3533,107 @@ html {
   .map {
     width: 100%;
   }
+  /* *** */
+  .bg-Cryptocurrency,
+  .integration .bg-Cryptocurrency {
+    width: 100%;
+  }
+
+  .map-payments {
+    width: 100%;
+  }
+
+  .bg-transaction {
+    width: 100%;
+  }
+
+  .payment-images {
+    width: 230px;
+    height: 320px;
+    left: 100px;
+    top: 20px;
+  }
+
+  .select-gatway {
+    left: 50px;
+    top: 0px;
+  }
+
+  .green-circle-transaction {
+    left: 200px;
+    top: -30px;
+  }
+
+  .above-arrow-transaction {
+    position: absolute;
+    left: 215px;
+    top: -10px;
+  }
+
+  .bottom-arrow-transaction {
+    position: absolute;
+    left: 215px;
+    top: 20px;
+  }
+
+  .lock {
+    right: -40px;
+  }
+
+  .black-bg1-transaction {
+    left: 163px;
+    top: 110px;
+  }
+
+  .black-bg2-transaction {
+    left: 163px;
+    top: 120px;
+  }
+
+  .financial-payment-Cryptocurrency {
+    width: 380px;
+    left: 67px;
+    top: 100px;
+  }
+
+  .true-Cryptocurrency {
+    top: 150px;
+    left: 145px;
+    width: 100px;
+    height: 30px;
+  }
+
+  .payment-text {
+    top: 180px;
+    left: 160px;
+  }
+
+  .Cryptocurrency-payment-types {
+    position: absolute;
+    left: 155px;
+  }
+
+  .Crypto-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .realistic-laptop-integration {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 400px;
+  }
+
+  .code-icon-integration {
+    top: 160px;
+    right: 0px;
+  }
+
+  .girle-icon-integration {
+    top: 150px;
+    left: -20px;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -3908,6 +3775,77 @@ html {
   }
   .each-order-traking {
     width: 300px;
+  }
+  .bg-Cryptocurrency,
+  .integration {
+    width: 100%;
+  }
+
+  .map-payments {
+    width: 100%;
+  }
+
+  .bg-transaction {
+    width: 100%;
+  }
+
+  .green-circle-transaction {
+    top: 50px;
+  }
+
+  .above-arrow-transaction {
+    top: 70px;
+  }
+
+  .bottom-arrow-transaction {
+    top: 100px;
+  }
+
+  .black-bg1-transaction {
+    top: 180px;
+  }
+
+  .black-bg2-transaction {
+    top: 200px;
+  }
+
+  .lock {
+    right: 0;
+  }
+
+  .financial-payment-Cryptocurrency {
+    width: 550px;
+    left: 20px;
+    top: 7px;
+  }
+
+  .true-Cryptocurrency {
+    top: 100px;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .payment-text {
+    top: 160px;
+    left: 170px;
+  }
+
+  .Cryptocurrency-payment-types {
+    position: absolute;
+    left: 160px;
+  }
+
+  .Crypto-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .realistic-laptop-integration {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 450px;
   }
 }
 
@@ -4544,78 +4482,132 @@ html {
     top: 270px;
   }
 
-  .landing-payment-images{
+  .landing-payment-images {
     margin: 100px 0 50px 0;
   }
-  .map-payments{
+  .map-payments {
     width: 100%;
   }
-  .shipping-rate-landing-lines{
+  .shipping-rate-landing-lines {
     width: 70px;
   }
-  .select-gatway{
+  .select-gatway {
     display: none;
-
   }
-  .icons-shipping-landing{
+  .icons-shipping-landing {
     width: 30px;
   }
-
 
   .man-hand {
     left: 10px;
     width: 70%;
-}
-.bg-transaction {
-  width: 100%;
-}
-.green-circle-transaction {
-  top: 0px;
-  width: 50px;
-  left: 145px;
-}
-.above-arrow-transaction {
-  left: 150px;
-  top: 10px;
-  width: 40px;
-}
-.bottom-arrow-transaction {
-  left: 150px;
-  top: 30px;
-  width: 40px;
-}
-.black-bg1-transaction {
-  left: 118px;
-  top: 80px;
-  width: 90px;
-}
+  }
+  .lock {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 130px;
+    height: 130px;
+  }
+  .bg-transaction {
+    width: 100%;
+  }
+  .green-circle-transaction {
+    top: 0px;
+    width: 50px;
+  }
+  .above-arrow-transaction {
+    top: 10px;
+    width: 40px;
+  }
+  .bottom-arrow-transaction {
+    top: 30px;
+    width: 40px;
+  }
 
-.black-bg2-transaction {
- 
-  top: 90px;
-  left: 119px;
-  width: 90px;
+  .transaction-sm-star {
+    bottom: 10px;
+    left: 200px;
+  }
+  .transaction-lg-star {
+    position: absolute;
+    bottom: 0px;
+    left: 220px;
+  }
+  .transaction-texts {
+    margin: 80px 0 80px 0;
+  }
+  .bg-curriences {
+    padding: 0px;
+    width: 100%;
+  }
+  .line-true-curriences {
+    top: 50px;
+    left: 40px;
+  }
+  .green-currenices-line {
+    width: 220px;
+  }
+  .monyes {
+    width: 300px;
+    left: 20px;
+  }
+  .currenices {
+    margin-bottom: 200px;
+  }
+  .bg-Cryptocurrency {
+    width: 100%;
+  }
+  .financial-payment-Cryptocurrency {
+    position: absolute;
+    top: -10px;
+    width: 360px;
+    left: 0px;
+  }
+  .true-Cryptocurrency {
+    top: 130px;
+    left: 105px;
+    width: 30px;
+    height: 30px;
+  }
+  .payment-text {
+    top: 160px;
+    left: 90px;
+  }
+  .Cryptocurrency-payment-types {
+    position: absolute;
+    left: 90px;
+    top: 195px;
+  }
+  .Crypto-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .line-Cryptocurrency {
+    width: 40px;
+  }
+  .arrow-Cryptocurrency {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
 
-}
-.transaction-sm-star {
-  bottom: 10px;
-  left: 200px;
-}
-.transaction-lg-star {
-  position: absolute;
-  bottom: 0px;
-  left: 220px;
-}
-.transaction-texts{
-  margin: 80px 0 80px 0;
-}
- 
-
-
-
-
-
-
+  .realistic-laptop-integration {
+    top: 110px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+  }
+  .code-icon-integration {
+    top: 170px;
+    right: 20px;
+    width: 100px;
+  }
+  .girle-icon-integration {
+    bottom: 30px;
+    left: 30px;
+    width: 90px;
+  }
 }
 
 @media (max-width: 768px), (min-width: 768px) and (max-width: 992px) {
