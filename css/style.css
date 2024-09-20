@@ -1809,33 +1809,6 @@ html {
   left: 20px;
 }
 
-@media (max-width: 768px) {
-  .digital-bg {
-    width: 100%;
-  }
-
-  .digital-man-smiling {
-    position: absolute;
-    width: 480px;
-    height: 350px;
-  }
-
-  .circle-digital-product {
-    width: 150px;
-  }
-
-  .digital-frame {
-    position: absolute;
-    top: 80px;
-  }
-
-  .black-digital-shadow {
-    position: absolute;
-    width: 96%;
-    left: 10px;
-  }
-}
-
 /* ******************************ene digital product section styles ***********************/
 
 /* ******************************start physical product section styles ***********************/
@@ -1872,81 +1845,6 @@ html {
   position: absolute;
   bottom: 5px;
   left: 50px;
-}
-
-@media (max-width: 991px) {
-  .brunette-girl-physical {
-    height: 300px;
-  }
-
-  .black-physical-shadow {
-    position: absolute;
-    bottom: 0;
-    left: 12px;
-    width: 95%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .digital-bg,
-  .cardboard-boxes-physical-products {
-    width: 90%;
-  }
-
-  .digital-man-smiling {
-    width: 480px;
-    height: 400px;
-    right: 50px;
-  }
-
-  .brunette-girl-physical {
-    bottom: 0;
-    right: 30px;
-    height: 420px;
-    right: 100px;
-  }
-
-  .black-digital-shadow,
-  .black-physical-shadow {
-    width: 87%;
-    left: 10px;
-  }
-
-  .digital-frame {
-    top: 100px;
-    right: 100px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .digital-bg,
-  .cardboard-boxes-physical-products {
-    width: 100%;
-  }
-
-  .black-digital-shadow,
-  .black-physical-shadow {
-    width: 95.5%;
-    left: 10px;
-  }
-
-  .digital-man-smiling {
-    height: 320px;
-    right: -10px;
-  }
-
-  .brunette-girl-physical {
-    height: 320px;
-  }
-
-  .digital-frame {
-    top: 50px;
-    right: 30px;
-  }
-
-  .circle-digital-product {
-    width: 120px;
-  }
 }
 
 /* ******************************end physical product section styles ***********************/
@@ -3182,6 +3080,38 @@ html {
   .select-gatway {
     top: 30px;
   }
+  .physical-product-images {
+    margin-bottom: 80px;
+    margin-top: 60px;
+  }
+  .digital-bg,
+  .cardboard-boxes-physical-products {
+    width: 90%;
+  }
+
+  .digital-man-smiling {
+    width: 480px;
+    height: 400px;
+    right: 50px;
+  }
+
+  .brunette-girl-physical {
+    bottom: 0;
+    right: 30px;
+    height: 420px;
+    right: 100px;
+  }
+
+  .black-digital-shadow,
+  .black-physical-shadow {
+    width: 87%;
+    left: 10px;
+  }
+
+  .digital-frame {
+    top: 100px;
+    right: 100px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3633,6 +3563,35 @@ html {
   .girle-icon-integration {
     top: 150px;
     left: -20px;
+  }
+  /* physical-digital products */
+  .digital-bg,
+  .cardboard-boxes-physical-products {
+    width: 100%;
+  }
+
+  .black-digital-shadow,
+  .black-physical-shadow {
+    width: 95.5%;
+    left: 10px;
+  }
+
+  .digital-man-smiling {
+    height: 320px;
+    right: -10px;
+  }
+
+  .brunette-girl-physical {
+    height: 320px;
+  }
+
+  .digital-frame {
+    top: 50px;
+    right: 30px;
+  }
+
+  .circle-digital-product {
+    width: 120px;
   }
 }
 
@@ -4607,6 +4566,62 @@ html {
     bottom: 30px;
     left: 30px;
     width: 90px;
+  }
+  .digital-products {
+    margin-bottom: 100px;
+    margin-top: -70px;
+  }
+  .digital-man-smiling {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+  }
+  .digital-bg {
+    width: 100%;
+  }
+  .circle-digital-product {
+    width: 80px;
+    left: 30px;
+    top: 20px;
+  }
+  .white-digital-border {
+    width: 60px;
+  }
+  .digital-frame {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  .white-product-lines {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 40px;
+  }
+  .digital-bg {
+    width: 100%;
+  }
+
+  .black-digital-shadow {
+    position: absolute;
+    width: 95%;
+    left: 10px;
+  }
+  .digital-product-images {
+    margin-top: 60px;
+  }
+
+  .physical-product-images {
+    margin-bottom: 80px;
+    margin-top: 60px;
+  }
+  .black-physical-shadow {
+    bottom: 0;
+    left: 12px;
+    width: 94%;
+  }
+  .brunette-girl-physical {
+    height: 300px;
   }
 }
 
