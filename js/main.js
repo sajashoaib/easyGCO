@@ -2,7 +2,45 @@ document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
+const spinnerWrapper= document
+.querySelector('.spinner-wrapper');
+
+window.addEventListener('load',()=>{
+  
+  setTimeout(() => {
+    spinnerWrapper.classList.add('hidden'); 
+  },300);
+})
+  
+
+
+var navbarToggler = document.querySelector(".navbar-toggler");
+var mainContent = document.querySelector("main");
+
+navbarToggler.addEventListener("click", function () {
+  // When the navbar is expanded, adjust the main content padding
+  setTimeout(function () {
+    var navbarHeight = document.querySelector(".navbar").offsetHeight;
+    mainContent.style.marginTop = navbarHeight + "px";
+  }, 300); // Adjust timeout to match navbar collapse animation
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const carousel = document.querySelector(
     "#carouselExampleControls .carousel-inner"
   );
@@ -17,12 +55,20 @@ document.addEventListener("DOMContentLoaded", function () {
     indicators.forEach((indicator, index) => {
       if (index === activeIndex) {
         indicator.classList.add("active-indicator");
-        console.log(indicator);
+
+        // indicator.style.background = "red"; 
+          console.log(indicator);
       } else {
         indicator.classList.remove("active-indicator");
+        // indicator.style.background = "blue"; 
+
+
       }
     });
   }
+
+
+  
 
   // Move to the next item
   nextBtn.addEventListener("click", function () {
@@ -69,6 +115,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   updateIndicators();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 // ************************************************************************

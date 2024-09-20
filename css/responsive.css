@@ -1,0 +1,60 @@
+@media (max-width: 480px) {
+    /* CSS للهواتف المحمولة الصغيرة */
+  }
+  
+  /* الهواتف الذكية الكبيرة والأجهزة المحمولة العمودية */
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* CSS للأجهزة المحمولة الأكبر */
+  }
+  
+
+
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .wrapper-landing {
+        margin-bottom: 500px;
+      }
+      .bg-landing-index {
+        position: absolute;
+        width: 100%;
+        left: 0;
+      }
+    
+      .lap-img {
+        position: absolute;
+        width: 440px;
+        left: 40px;
+        top: 120px;
+      }
+    
+      .Polygon-1 {
+        display: none;
+      }
+      .landing .img-content .headphone {
+        height: 180px;
+        position: absolute;
+        left: 250px;
+        top: -50px;
+      }
+    
+      .ecommerce {
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    /* التصميم المخصص للهواتف العادية */
+  }
+  @media (min-width: 768px) and (max-width:992px) {
+    /* التصميم المخصص للأجهزة اللوحية */
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    /* التصميم المخصص لأجهزة الكمبيوتر المكتبية الصغيرة */
+  }
+  @media (min-width: 1200px) {
+    /* التصميم المخصص للشاشات الكبيرة */
+  }
+  @media (min-width: 1400px) {
+    /* التصميم المخصص للشاشات الضخمة */
+  }
+            
+

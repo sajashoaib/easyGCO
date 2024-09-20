@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="css/aos.css" rel="stylesheet" />
 
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -20,11 +21,18 @@
 </head>
 
 <body>
+  <div class="spinner-wrapper">
+   <div class="spinner-border " role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div> 
+  </div>
+  
+
   <div class="container-fluid header position-relative overflow-hidden p-0">
     <!-- ------------start navbar ------------------- -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top bg-white mb-30">
       <div class="container">
-        <img src="images/logo-img.svg" alt="" class="logo" />
+        <img data-src="images/logo-img.svg" alt="" class="logo lazyload" />
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
           aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
@@ -62,49 +70,49 @@
 
     <!-- ------------start landingpage ------------------- -->
 
-    <div class="landing pt-5 pb-40 mb-30">
+    <div class="landing pt-5 pb-40 mb-30 pt-60">
       <div class="container">
-        <div class="wrapper-landing">
-          <div class="row d-flex gap-4">
-            <div class="col-lg-5 mb-4 text-center text-md-start text-sm-start">
+        <div class="wrapper-landing pt-100 pt-xm-0">
+          <div class="row d-flex gap-4 ">
+            <div class="col-lg-5 mb-4 text-center text-md-start text-sm-start" data-aos="fade-up-right">
               <div class="text">
                 <div class="d-lg-flex justify-content-end align-items-end d-sm-none position-relative">
-                  <img src="images/Polygon 1-img.svg" alt="" class="Polygon-1" />
+                  <img data-src="images/Polygon 1-img.svg" alt="" class="Polygon-1 lazyload" alt="Lazy Loaded Image" />
                 </div>
-                <h1 class="fw-bold color-red fs-80 fs-sm-60 lh-114">
+                <h1 class="fw-bold color-red fs-80 fs-xxm-50 fs-sm-60  lh-114 lh-xxm-70 lh-sm-80 text-xxm-left">
                   Start Selling
                   <span class="fw-normal d-block dark-color color-paragraph1">Online Today</span>
                 </h1>
-                <p class="desc fw-normal fs-20 lh-32 fs-sm-16">
+                <p class="desc fw-normal fs-20 lh-32 fs-xxm-16 fs-sm-18 text-xxm-left">
                   Create your online store quickly and easily with EasyGCO.
                   Whether you're selling digital products, physical goods, or
                   offering subscriptions, our platform provides everything you
                   need to succeed.
                 </p>
-                <a class="btn rounded-pill d-inline-block mt-3 my-3 create-store-btn bg-dark-color"
+                <a class="btn rounded-pill d-inline-block mt-3 my-3 create-store-btn bg-dark-color fs-xxm-16 "
                   data-aos="fade-right" href="#">Create your store now
                   <i class="fa-solid fa-arrow-up-right-from-square dark-color fs-14"></i></a>
                 <div class="d-flex justify-content-end align-items-end position-relative">
-                  <img src="images/star-sec1-img.svg" alt="" class="star-sec1-img" />
+                  <img data-src="images/star-sec1-img.svg" alt="" class="star-sec1-img lazyload" />
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 position-relative img-content">
-              <img src="images/img-background.png" alt="" class="bg-landing-index img-fluid" />
+            <div class="col-lg-6 position-relative img-content" data-aos="fade-up-left">
+              <img data-src="images/img-background.png" alt="" class="bg-landing-index img-fluid lazyload" />
 
               <div class="headphone shadow" data-aos="zoom-in-left">
-                <h4 class="text-start fs-18 fw dark-color lh-22">
+                <h4 class="text-start fs-18  fw dark-color lh-22 fs-xxm-16">
                   Launch Your Store in Minutes
                 </h4>
-                <img src="images/headphone-img.svg" class="p-lg-2 head-img" alt="" />
+                <img data-src="images/headphone-img.svg" class="p-lg-2 head-img lazyload" alt="" />
               </div>
 
-              <img class="img-fluid d-block lap-img" src="images/laptop-img.svg" alt="" />
+              <img class="img-fluid d-block lap-img lazyload" data-src="images/laptop-img.svg" alt=""  />
 
               <div class="ecommerce d-flex justify-content-center align-items-center shadow">
 
 
-                <img src="images/online-shop-img.svg" alt="" />
+                <img data-src="images/online-shop-img.svg" alt=""  class="lazyload"/>
                 <h5 class="text-start p-lg-2 d-inline fs-16 fw-500 lh-22 dark-color"></h5>
 
                 All-in-One E-commerce Solution
@@ -121,64 +129,14 @@
       <div class="solutions pt-60  pb-40">
         <div class="container">
           <div class="row d-flex  gap-3  row-solution">
-            <div class="solutions-card col-lg-5 order-lg-2">
-              <h2 class="pb-10 fs-50 fw-400 lh-70 color-subhead2 pt-sm-20 fs-sm-30 pt-xm-40">
-                Explore Our <span class="fw-500"> Solutions</span>
-              </h2>
-              <div class="card-contain">
-                <div class="card d-flex flex-row align-items-center justify-center gap-3 p-2 mb-3 shadow"
-                  data-aos="zoom-in-up">
-                  <img src="images/sec2-icon1.png" class="img-fluid sec-icon d-inline-block" alt="" />
-                  <div>
-                    <h5 class="fs-24 fw-500 lh-35 dark-color">
-                      Digital Products
-                    </h5>
-                    <p class="fs-18 fw-400 lh-27">
-                      Securely sell e-books, software, and courses.
-                    </p>
-                  </div>
-                </div>
-                <div class="card d-flex flex-row align-items-center justify-center gap-3 p-3 mb-3 shadow"
-                  data-aos="zoom-in-up">
-                  <img src="images/sec2-icon2.png" class="img-fluid sec-icon d-inline-block" alt="" />
-                  <div>
-                    <h5 class="fs-24 fw-500 lh-35 dark-color">
-                      Physical Products
-                    </h5>
-                    <p class="fs-18 fw-400 lh-27">
-                      Manage inventory, shipping, and more.
-                    </p>
-                  </div>
-                </div>
-                <div class="card d-flex flex-row align-items-center justify-center gap-3 p-3 mb-3 shadow"
-                  data-aos="zoom-in-up">
-                  <img src="images/sec2-icon3.png" class="img-fluid sec-icon d-inline-block" alt="" />
-                  <div>
-                    <h5 class="fs-24 fw-500 lh-35 dark-color">Subscriptions</h5>
-                    <p class="fs-18 fw-400 lh-27">
-                      Offer recurring services with ease.
-                    </p>
-                  </div>
-                </div>
-                <div class="card d-flex flex-row align-items-center justify-center gap-3 p-3 mb-4 shadow"
-                  data-aos="zoom-in-up">
-                  <img src="images/sec2-icon4.png" class="img-fluid sec-icon d-inline-block" alt="" />
-                  <div>
-                    <h5 class="fs-24 fw-500 lh-35 dark-color">Dropshipping</h5>
-                    <p class="fs-18 fw-400 lh-27">
-                      Sell without holding inventory.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <a class="btn main-btn two rounded-pill d-none d-lg-block" href="#">Learn More</a>
-            </div>
 
-            <div class="col-lg-6 images-solutions">
-              <img src="images/person.svg" alt="" class="img-fluid person-solution" />
+
+ <div class="col-lg-6 images-solutions">
+             
+               <img src="images/person.svg" alt=""  class="img-fluid person-solution lazyload" >
               <div class="star-solution d-flex align-items-start gap-3" data-aos="fade-down-right">
                 <div>
-                  <img src="images/Star 1.svg" alt="" class="star" />
+                  <img data-src="images/Star 1.svg" alt="" class="star lazyload" />
                 </div>
                 <div class="text">
                   <h5 class="fw-500 fs-12 lh-14">5 Stars</h5>
@@ -194,27 +152,82 @@
                   <span class="d-block dark-color fs-22 lh-22 fw-400">$65,000</span>
                 </p>
                 <div class="text">
-                  <img src="images/statictis.svg" alt="" />
-                  <img src="images/months.svg" alt="" />
+                  <img data-src="images/statictis.svg" alt="" class="lazyload" />
+                  <img data-src="images/months.svg" alt="" class="lazyload" />
                 </div>
               </div>
 
-              <div class="payments" data-aos="fade-up-right">
+              <div class="payments shadow" data-aos="fade-up-right">
                 <div class="text">
                   <p class="fs-16 fw-400 lh-34 dark-color">
                     Accept Payments
-                    <span class="d-block fs-30 fw-500 lh-34">Worldwide</span>
+                    <span class="d-block fs-30 fs-xxm-16 fw-500 lh-34 lh-xxm-20">Worldwide</span>
                   </p>
                 </div>
                 <div class="d-flex justify-content-between align-items-center payments-pngwing">
-                  <img src="images/pngwing.svg" alt="" />
+                  <img data-src="images/pngwing.svg" alt="" class="lazyload"/>
                   <span>Mater Card</span>
-                  <img src="images/drop-btn.svg" alt="" />
+                  <img data-src="images/drop-btn.svg" alt="" class="lazyload"/>
                 </div>
               </div>
 
               <a class="btn main-btn two rounded-pill d-lg-none mt-3 learn" href="#">Learn More</a>
             </div>
+
+            <div class="solutions-card col-lg-5">
+              <h2 class="pb-10 fs-50 fs-xxm-30 fw-400 lh-70 color-subhead2 pt-sm-20 fs-sm-30 pt-xm-40">
+                Explore Our <span class="fw-500"> Solutions</span>
+              </h2>
+              <div class="card-contain">
+                <div class="card d-flex flex-row align-items-center justify-center gap-3  mb-3 shadow"
+                  data-aos="zoom-in-up">
+                  <img data-src="images/sec2-icon1.png" class="img-fluid sec-icon d-inline-block lazyload" alt="" />
+                  <div>
+                    <h5 class="fs-24 fs-xxm-22 fw-500 lh-35 dark-color">
+                      Digital Products
+                    </h5>
+                    <p class="fs-18 fw-400 lh-27">
+                      Securely sell e-books, software, and courses.
+                    </p>
+                  </div>
+                </div>
+                <div class="card d-flex flex-row align-items-center justify-center gap-3  mb-3 shadow"
+                  data-aos="zoom-in-up">
+                  <img data-src="images/sec2-icon2.png" class="img-fluid sec-icon d-inline-block lazyload" alt="" />
+                  <div>
+                    <h5 class="fs-24  fs-xxm-22 fw-500 lh-35 dark-color">
+                      Physical Products
+                    </h5>
+                    <p class="fs-18 fw-400 lh-27">
+                      Manage inventory, shipping, and more.
+                    </p>
+                  </div>
+                </div>
+                <div class="card d-flex flex-row align-items-center justify-center gap-3  mb-3 shadow"
+                  data-aos="zoom-in-up">
+                  <img data-src="images/sec2-icon3.png" class="img-fluid sec-icon d-inline-block lazyload" alt="" />
+                  <div>
+                    <h5 class="fs-24 fs-xxm-22 fw-500 lh-35 dark-color">Subscriptions</h5>
+                    <p class="fs-18 fw-400 lh-27">
+                      Offer recurring services with ease.
+                    </p>
+                  </div>
+                </div>
+                <div class="card d-flex flex-row align-items-center justify-center gap-3 mb-4 shadow"
+                  data-aos="zoom-in-up">
+                  <img data-src="images/sec2-icon4.png" class="img-fluid sec-icon d-inline-block lazyload" alt="" />
+                  <div>
+                    <h5 class="fs-24 fs-xxm-22 fw-500 lh-35 dark-color">Dropshipping</h5>
+                    <p class="fs-18 fw-400 lh-27">
+                      Sell without holding inventory.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a class="btn main-btn two rounded-pill d-none d-lg-block" href="#">Learn More</a>
+            </div>
+
+           
           </div>
         </div>
       </div>
@@ -227,7 +240,7 @@
       <div class="container">
         <div class="row d-flex justify-content-center align-items-center chooseEasyGCO-card gap-3" data-aos="fade-up">
           <div class="col-lg-4 choose-md-card" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-            <h3 class="fw-400 fs-60 lh-70 text-left dark-color">
+            <h3 class="fw-400 fs-60 fs-xxm-40 lh-70 text-left dark-color">
               Why Choose <span class="fw-600">EasyGCO</span>
             </h3>
           </div>
@@ -297,10 +310,10 @@
 
     <!-- ------------start features section ------------------- -->
     <div class="features p-5">
-      <h3 class="mt-5 fs-60 fs-sm-40 fw-400 text-center lh-70 color-subhead1">
-        Features Designed to Enhance <span class="d-block fs-70 fs-sm-40 fw-400 lh-70 text-center">Your Business </span>
+      <h3 class="mt-5 fs-60 fs-xxm-30 fs-sm-40 fw-400 text-center color-subhead1">
+        Features Designed to Enhance <span class="d-lg-block fs-70 fs-sm-50 fw-400 lh-70 text-center fs-xxm-40">Your Business </span>
       </h3>
-      <img src="images/circle.svg" alt="" />
+      <img data-src="images/circle.svg" alt="" />
       <div class="features-contain d-flex flex-column gap-3 position-relative">
         <div class="container">
           <div class="nextprev d-flex justify-content-end align-items-center gap-3 mt-4 mb-3 p-4">
@@ -311,9 +324,9 @@
           <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="card shadow-sm" data-aos="fade-down">
+                <div class="card shadow-sm feature-card" data-aos="fade-down">
                   <div class="card-body text-left" id="card-one">
-                    <img src="images/sec3-icon1.svg" alt="" />
+                    <img data-src="images/sec3-icon1.svg" alt="" class="lazyload"/>
                     <h5 class="card-title">Customizable Store</h5>
                     <p class="card-text">
                       Easily customize your store with options for color
@@ -326,9 +339,9 @@
               </div>
 
               <div class="carousel-item">
-                <div class="card shadow-sm" data-aos="fade-down">
+                <div class="card shadow-sm feature-card" data-aos="fade-down">
                   <div class="card-body text-left">
-                    <img src="images/sec4-icon2.svg" alt="" />
+                    <img data-src="images/sec4-icon2.svg" alt="" class="lazyload"/>
                     <h5 class="card-title">Marketing Tools</h5>
                     <p class="card-text">
                       Boost your sales with SEO optimization, email marketing,
@@ -339,9 +352,9 @@
               </div>
 
               <div class="carousel-item">
-                <div class="card shadow-sm" data-aos="fade-down">
+                <div class="card shadow-sm feature-card " data-aos="fade-down">
                   <div class="card-body text-left">
-                    <img src="images/sec4-icon3.svg" alt="" />
+                    <img data-src="images/sec4-icon3.svg" alt="" class="lazyload"/>
                     <h5 class="card-title">Detailed Analytics</h5>
                     <p class="card-text">
                       Monitor your store’s performance and make informed
@@ -352,9 +365,9 @@
               </div>
 
               <div class="carousel-item">
-                <div class="card shadow-sm" data-aos="fade-down">
+                <div class="card shadow-sm feature-card" data-aos="fade-down">
                   <div class="card-body text-left">
-                    <img src="images/sec4-icon4.svg" alt="" />
+                    <img data-src="images/sec4-icon4.svg" alt="" class="lazyload"/>
                     <h5 class="card-title">No Additional Transaction Fees</h5>
                     <p class="card-text">
                       Keep more of your earnings with 0% additional
@@ -365,9 +378,9 @@
               </div>
 
               <div class="carousel-item">
-                <div class="card shadow-sm" data-aos="fade-down">
+                <div class="card shadow-sm feature-card" data-aos="fade-down">
                   <div class="card-body text-left">
-                    <img src="images/sec4-icon5.svg" alt="" />
+                    <img data-src="images/sec4-icon5.svg" alt=""class="lazyload" />
                     <h5 class="card-title">Dropshipping</h5>
                     <p class="card-text">
                       Connect with dropshipping suppliers to sell products
@@ -379,15 +392,15 @@
               </div>
             </div>
 
+        
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-to="0" aria-current="true"
-                aria-label="1" class="active-indicator"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-to="1" aria-label=" 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-to="2" aria-label=" 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-to="4" aria-current="true"
-                aria-label="5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-to="6" aria-current="true"
-                aria-label="7"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-to="0" aria-label="1" class="active-indicator"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-to="1" aria-label="2"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-to="2" aria-label="3"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-to="3" aria-label="4"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-to="4" aria-label="5"></button>
+
+
             </div>
           </div>
         </div>
@@ -404,29 +417,29 @@
           <div class="col-lg-6 order-lg-2 order-1 get-image p-sm-4 position-relative">
             <div class="get-free-imgs d-flex align-items-center justify-content-center flex-column"
               data-aos="flip-right">
-              <img src="images/shopping-online.svg" alt="" />
-              <div>
-                <img src="images/girle.svg" alt="" />
-                <img src="images/lines.svg" alt="" />
+              <img data-src="images/shopping-online.svg" alt=""class="lazyload" />
+              <div class="d-flex align-items-center gap-2">
+                <img data-src="images/girle.svg" alt="" class="lazyload"/>
+                <img data-src="images/lines.svg" alt="" class="lazyload line-girle"/>
               </div>
             </div>
 
             <div class="users" data-aos="fade-down">
-              <img src="images/man2.svg" alt="" />
-              <img src="images/man1.svg" alt="" />
-              <img src="images/man3.svg" alt="" />
-              <img src="images/plus-man.svg" alt="" />
+              <img data-src="images/man2.svg" alt="" class="lazyload"/>
+              <img data-src="images/man1.svg" alt="" class="lazyload"/>
+              <img data-src="images/man3.svg" alt="" class="lazyload"/>
+              <img data-src="images/plus-man.svg" alt="" class="lazyload"/>
               <div class="text-users">
-                <p class="pt-sm-20 ">Connect with <span class="d-block">12K Users</span></p>
+                <p class="pt-sm-20 fs-xxm-12  dark-color">Connect with <span class="d-block fs-xxm-12">12K Users</span></p>
               </div>
             </div>
 
             <div class="star-img-solution" data-aos="fade-right">
-              <img src="images/star-sec5.svg" alt="" />
+              <img data-src="images/star-sec5.svg" alt=""class="lazyload star-sec5" />
             </div>
 
             <div class="ecommerce d-flex justify-content-center align-items-center" data-aos="fade-up-right">
-              <img src="images/online-shop-img.svg" alt="" />
+              <img data-src="images/online-shop-img.svg" alt=""class="lazyload" />
               <h5 class="text-start p-lg-2 d-inline">
                 All-in-One E-commerce Solution
               </h5>
@@ -434,7 +447,7 @@
           </div>
           <!-- Column for text and button, with different order based on screen size -->
           <div class="col-lg-5  order-lg-1 order-2 text">
-            <h3 class="m-sm-3 fs-sm-40 fs-60 fw-600 lh-70">Get Started for Free</h3>
+            <h3 class="m-sm-3 fs-sm-40 fs-60 fs-xxm-50 fw-600 lh-70">Get Started for Free</h3>
             <p>
               Sign up today and start building your online store with EasyGCO.
               No credit card required!
@@ -456,18 +469,18 @@
         <div class="row d-flex justify-content-center align-items-center position-relative">
           <div class="col-12 position-relative">
             <div class="d-flex justify-content-start mt-5 mb-5">
-              <img src="images/pers-1.svg" alt="" class="per1" data-aos="fade-right" />
+              <img data-src="images/pers-1.svg" alt="" class="per1 lazyload" data-aos="fade-right" />
             </div>
             <div>
               <div class="position-relative">
-                <img src="images/sm-stat.svg" alt="" data-aos="flip-right" class="sm-star" />
-                <img src="images/lg-star.svg" alt="" data-aos="flip-right" class="lg-star" />
+                <img data-src="images/sm-stat.svg" alt="" data-aos="flip-right" class="sm-star lazyload" />
+                <img data-src="images/lg-star.svg" alt="" data-aos="flip-right" class="lg-star lazyload" />
               </div>
               <div class="text p-3">
-                <h3 class="fs-60  lh-70 dark-color text-center fw-400 ">Join Thousands of <span
-                    class="d-block fs-70 fw-600 lh-70 text-center fs-sm-60 color-red fs-xm-40 ">Successful Businesses
+                <h3 class="fs-60 fs-xxm-40  lh-70 dark-color text-center fw-400 ">Join Thousands of <span
+                    class="d-lg-block fs-70 fw-600 lh-70 text-center fs-sm-60 color-red fs-xm-40 fs-xxm-40 ">Successful Businesses
                   </span></h3>
-                <p class="fs-24 fw-400 lh-35 text-center color-paragraph9 ">
+                <p class="fs-24 fw-400 lh-35 text-center color-paragraph9 fs-xxm-22">
                   Start your e-commerce journey with EasyGCO and watch your
                   business grow.
                 </p>
@@ -478,20 +491,20 @@
                 </div>
               </div>
               <div>
-                <img src="images/pers-2.svg" alt="" class="per2" data-aos="fade-left" />
+                <img src="images/pers-2.svg" alt="" class="per2 lazyload" data-aos="fade-left" />
               </div>
             </div>
             <div class="d-flex justify-content-start align-items-center m-5">
-              <img src="images/pers-3.svg" alt="" class="per3" data-aos="fade-down-right" />
+              <img data-src="images/pers-3.svg" alt="" class="per3 lazyload" data-aos="fade-down-right" />
             </div>
             <div class="d-flex justify-content-center">
-              <img src="images/pers-4.svg" alt="" class="per4" data-aos="flip-down" />
+              <img data-src="images/pers-4.svg" alt="" class="per4 lazyload" data-aos="flip-down" />
             </div>
 
-            <img src="images/Polygon 5.svg" alt="" class="pologon5" data-aos="flip-down" />
-            <img src="images/full-circle.svg" alt="" class="circle5" data-aos="flip-down" />
+            <img data-src="images/Polygon 5.svg" alt="" class="pologon5 lazyload" data-aos="flip-down" />
+            <img data-src="images/full-circle.svg" alt="" class="circle5 lazyload" data-aos="flip-down" />
             <div class="d-flex justify-content-end align-items-end">
-              <img src="images/pers-5.svg" alt="" class="per5" data-aos="fade-up-left" />
+              <img data-src="images/pers-5.svg" alt="" class="per5 lazyload" data-aos="fade-up-left" />
             </div>
           </div>
         </div>
@@ -505,7 +518,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <div class="info mb-3">
-              <img src="images/logo.png" alt="" class="mb-4" data-aos="flip-left" />
+              <img data-src="images/logo-img.svg" alt="" class="mb-4 lazyload" data-aos="flip-left" />
               <p class="mb-5" data-aos="fade-up">
                 "EasyGCO: Your all-in-one e-commerce solution, offering
                 powerful tools to build, manage, and grow your online store
@@ -566,19 +579,20 @@
           <div class="col-lg-2">Privacy Policy</div>
           <div class="col-lg-2">Security</div>
           <div class="socail col-lg-3">
-            <img src="images/social-1.svg" alt="" class="socail1" />
-            <img src="images/social-2.svg" alt="" class="socail2" />
-            <img src="images/social-3.svg" alt="" class="socail3" />
-            <img src="images/mdi_linkedin.svg" alt="" class="socail4" />
-            <img src="images/social-4.svg" alt="" class="socail5" />
+            <img data-src="images/social-1.svg" alt="" class="socail1 lazyload" />
+            <img data-src="images/social-2.svg" alt="" class="socail2 lazyload" />
+            <img data-src="images/social-3.svg" alt="" class="socail3 lazyload" />
+            <img data-src="images/mdi_linkedin.svg" alt="" class="socail4 lazyload" />
+            <img data-src="images/social-4.svg" alt="" class="socail5 lazyload" />
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- ------------end footer section ------------------- -->
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://upload-widget.cloudinary.com/global/all.js"></script>
+ <script src="./js/lazysizes.min.js"></script>
+ <script src="./js/aos.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
