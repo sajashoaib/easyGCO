@@ -304,6 +304,9 @@
   .fs-xxm-20{
     font-size: 20px;
   }
+  .fs-xxm-18 {
+    font-size: 18px;
+  }
   .fs-xxm-16 {
     font-size: 16px;
   }
@@ -413,6 +416,17 @@
   }
 
 }
+
+@media (min-width: 992px) and (max-width: 1200px),(min-width: 1200px) and (max-width: 1400px) {
+  
+.fs-lg-50{
+  font-size: 50px;
+}
+.lh-lg-70{
+  line-height: 70px;
+}
+}
+
 @media (min-width: 992px) and (max-width: 1200px),
 (min-width: 1200px) and (max-width: 1400px) {
   .fs-sm-30 {
@@ -433,6 +447,7 @@
   .pt-sm-20{
     padding-top: 20px;
   }
+  
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .create-store-btn {

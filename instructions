@@ -1,0 +1,110 @@
+To manage a user flow between **Sign In**, **Register**, and **Reset Password** pages, here's a suggested scenario for the flow, along with the logic for each page:
+
+### Scenario Overview:
+1. **First Page (Default)**: The **Sign In** page is the default or first page that users will encounter when they access your application.
+2. **Register** page: If the user does not have an account, they can navigate to the Register page via a "Sign Up" link/button.
+3. **Reset Password** page: If the user forgot their password, they can navigate to the Reset Password page via a "Forgot Password" link/button.
+4. **Redirects**: Each page should be able to navigate between the Sign In, Register, and Reset Password pages based on user interaction.
+
+### Scenario Details:
+- **Page 1**: **Sign In Page (Default Page)**
+    - This is where users who have an account sign in.
+    - If the sign-in is successful (valid email and password), the user is redirected to the main application page.
+    - If the user doesn't have an account, they can click a "Sign Up" link/button to go to the **Register** page.
+    - If the user forgot their password, they can click the "Forgot Password" link/button to go to the **Reset Password** page.
+  
+- **Page 2**: **Register Page**
+    - This page is where new users create an account.
+    - The page contains a form that collects user information such as email, password, and any additional registration fields.
+    - Once the user registers, they are either redirected to the **Sign In** page or automatically signed in and redirected to the main application page.
+    - If the user already has an account, they can click the "Sign In" link/button to go back to the **Sign In** page.
+  
+- **Page 3**: **Reset Password Page**
+    - This page allows users to reset their password by entering their registered email address.
+    - After the user submits the email, they are either shown a success message or redirected back to the **Sign In** page.
+    - There should also be a "Back to Sign In" link/button to navigate back to the **Sign In** page.
+
+### Flow Logic for Each Page:
+
+1. **Sign In Page Logic**:
+    - **Form Fields**: Email, Password, "Sign In" button.
+    - **Validation**: Validate email and password on submission (via local storage or API).
+    - **Error Handling**: Show errors if credentials are incorrect.
+    - **Redirect to Main Application**: If credentials are correct, redirect to the main application page (e.g., `dashboard.html`).
+    - **Links/Buttons**:
+      - **"Sign Up"**: Redirects to **Register** page.
+      - **"Forgot Password"**: Redirects to **Reset Password** page.
+
+    ```javascript
+    if (validCredentials) {
+      window.location.href = 'dashboard.html'; // Redirect to dashboard after successful login
+    } else {
+      // Show error message
+    }
+    ```
+
+2. **Register Page Logic**:
+    - **Form Fields**: Email, Password, Confirm Password, "Register" button.
+    - **Validation**: Ensure the email is not already registered (check in local storage or API), and passwords match.
+    - **Error Handling**: Show errors for invalid inputs (e.g., email format, password length, etc.).
+    - **After Registration**:
+      - Option 1: Redirect to **Sign In** page after successful registration.
+      - Option 2: Automatically sign in the user and redirect to the main application page.
+    - **Links/Buttons**:
+      - **"Sign In"**: Redirects to the **Sign In** page.
+
+    ```javascript
+    if (registrationSuccessful) {
+      // Option 1: Redirect to sign in page
+      window.location.href = 'signin.html';
+      
+      // Option 2: Automatically sign in and redirect to dashboard
+      window.location.href = 'dashboard.html';
+    } else {
+      // Show error message
+    }
+    ```
+
+3. **Reset Password Page Logic**:
+    - **Form Fields**: Email, "Reset Password" button.
+    - **Validation**: Validate if the email exists in the system (check in local storage or API).
+    - **Error Handling**: Show error if the email is not registered.
+    - **After Submission**:
+      - Show a success message indicating that an email with password reset instructions has been sent (if applicable).
+      - Redirect to **Sign In** page after the password reset process (or after a success message).
+    - **Links/Buttons**:
+      - **"Back to Sign In"**: Redirects to **Sign In** page.
+
+    ```javascript
+    if (emailExists) {
+      // Show success message
+      Swal.fire({
+        title: 'Password Reset Email Sent!',
+        text: 'Check your email for the reset instructions.',
+        icon: 'success',
+        confirmButtonText: 'Back to Sign In',
+      }).then(() => {
+        window.location.href = 'signin.html'; // Redirect to sign in page after reset
+      });
+    } else {
+      // Show error message
+    }
+    ```
+
+### Navigation Between Pages:
+- **Sign In Page**:
+  - "Sign Up" button/link → **Register Page**.
+  - "Forgot Password" button/link → **Reset Password Page**.
+  
+- **Register Page**:
+  - "Sign In" button/link → **Sign In Page**.
+
+- **Reset Password Page**:
+  - "Back to Sign In" button/link → **Sign In Page**.
+
+### Local Storage (Optional):
+- **Sign In**: Check if the email and password are stored in local storage or the backend database for validation.
+- **Register**: Store the user’s email and password in local storage or database after successful registration.
+- **Reset Password**: You can simulate sending a reset password email by checking if the email exists in local storage and showing a success message.
+
+Let me know if you need help with implementing any specific part of this scenario!
